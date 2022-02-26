@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book Mini Truck Online | Tata Ace for Rent in your City | Porter</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="city_tempo.css">
+</head>
+
+<body>
+  <!-- /////// HEAD START///////// -->
+  <div id="main"></div>
+  <hr>
+  <!-- /////// HEAD END ///////// -->
+
+
+
+  <div id="container">
+    <!-- /////////// Sliding Picture Start //////////////// -->
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+          aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+          aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
+          aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            src="https://porter-website-banners.s3-ap-southeast-1.amazonaws.com/prod/home/all/desktop_house_shifting_webbanner.jpg"
+            class="d-block w-100" alt="Please Refresh Page">
+        </div>
+        <div class="carousel-item">
+          <img
+            src="https://porter-website-banners.s3-ap-southeast-1.amazonaws.com/prod/home/all/outstation_webbanner.jpg"
+            class="d-block w-100" alt="Please Refresh Page">
+        </div>
+        <div class="carousel-item">
+          <img
+            src="https://porter-website-banners.s3-ap-southeast-1.amazonaws.com/prod/home/all/desktop_2W_heroimage.jpg"
+            class="d-block w-100" alt="Please Refresh Page">
+        </div>
+        <div class="carousel-item">
+          <img src="https://porter-website-banners.s3-ap-southeast-1.amazonaws.com/prod/home/all/Helper_compressed.png"
+            class="d-block w-100" alt="Please Refresh Page">
+        </div>
+        <div class="carousel-item">
+          <img
+            src="https://s3-ap-southeast-1.amazonaws.com/porter-website-banners/prod/home/all/landing_pg_heroimage.png"
+            class="d-block w-100" alt="Please Refresh Page">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <!-- /////////// Sliding Picture End //////////////// -->
+    <div id="addressBar">
+
+    </div>
+    <!-- //////////////Features Start/////////////// -->
+    <div id="conatiner2">
+      <div id="features">
+        <div class="box">
+          <div class="feature_No">1</div>
+          <div>
+            <div class="heading">Pickup and drop anywhere within the city</div>
+            <div>
+              <div class="heading2">Choose your pickup & drop location from within the city</div>
+              <div style="font-weight: 600; color: black;">Download the Porter app on</div>
+              <div>
+                <a href=""><img
+                    src="data:image/png;base64,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"
+                    alt=""></a>
+                <a href=""><img
+                    src="data:image/png;base64,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"
+                    alt=""></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr>
+        <div class="box">
+          <div class="feature_No">2</div>
+          <div>
+            <div class="heading">Choose vehicle of your choice</div>
+            <div>
+              <div class="heading2">Get quotes for vehicles which can carry from 20 kgs to 2000 kgs and book instantly
+                without any waiting
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr>
+        <div class="box">
+          <div class="feature_No">3</div>
+          <div>
+            <div class="heading">Real time tracking</div>
+            <div>
+              <div class="heading2">Our verified partner will ensure that your goods are transported safely to the
+                destination. You can
+                monitor the trip with live vehicle tracking and regular sms/email updates from our <b> MOBILE APP</b> or
+                <span>TRACK ORDER HERE</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr>
+      <!-- ////////////// Features End /////////////// -->
+
+      <!-- ////////////// Deivce Look Start ////////////////// -->
+      <div id="slide">
+        <div id="phone_container">
+          <img class="phone_inside" src="" alt="">
+        </div>
+
+      </div>
+      <!-- ////////////// Deivce Look End ////////////////// -->
+    </div>
+    <div class="offer1">
+      <div id="tag">WHAT WE OFFER</div>
+      <div class="bar"></div>
+    </div>
+
+    <div id="offerContent">
+      <div class="indvidualOffer">
+        <div><img src="https://i.ibb.co/4Fxr32C/1stlogo.png" class="offerimg" alt=""></div>
+        <div class="offerInfo">
+          <div><b>Hassle-Free truck rental</b></div>
+          <div>Book mini truck online. Whenever you need, wherever you need</div>
+        </div>
+      </div>
+
+      <div class="indvidualOffer">
+        <div><img src="https://i.ibb.co/47NHHXh/2stlogo.png" class="offerimg" alt=""></div>
+        <div class="offerInfo">
+          <div><b>Transparent Pricing</b></div>
+          <div>Enjoy the most affordable rates in town with our transparent pricing</div>
+        </div>
+      </div>
+
+      <div class="indvidualOffer">
+        <div><img src="https://i.ibb.co/VjBftd5/3stlogo.png" class="offerimg" alt=""></div>
+        <div class="offerInfo">
+          <div><b>Realtime Tracking</b></div>
+          <div>Track your goods movement across the city with our app</div>
+        </div>
+      </div>
+
+      <div class="indvidualOffer">
+        <div><img src="https://i.ibb.co/PNRPkzx/4stlogo.png" class="offerimg" alt=""></div>
+        <div class="offerInfo">
+          <div><b>Safe and Reliable Trucks</b></div>
+          <div>Superior safety ensured with our team of verified & trained partners</div>
+        </div>
+      </div>
+    </div>
+
+    <div id="offer2">
+      <div id="div1">
+        <div id="tag">PORTERS FOR YOU</div>
+        <div class="bar"></div>
+      </div>
+      <select id="city">
+        <option value="">Select City</option>
+        <option value="">MUMBAI</option>
+        <option value="">DELHI NCR</option>
+        <option value="">BANGLORE</option>
+        <option value="">HYDRABAD</option>
+        <option value="">CHENNAI</option>
+        <option value="">AHEMDABAD</option>
+        <option value="">JAIPUR</option>
+        <option value="">PUNE</option>
+        <option value="">KOLKATA</option>
+        <option value="">SURAT</option>
+        <option value="">LUCKNOW</option>
+        <option value="">COIMBATORE</option>
+        <option value="">INDOR</option>
+        <option value="">NAGPUR</option>
+        <option value="">CHANDIGARH</option>
+      </select>
+    </div>
+    <div id="res">
+      <div>
+        <div><img src="https://i.ibb.co/Gp0cjyz/2Weel.png" alt=""></div>
+        <div><img src="https://i.ibb.co/ZMX9dYd/3wheel.png" alt=""></div>
+        <div><img src="https://i.ibb.co/gdN5jTy/3wheel-helper.png" alt=""></div>
+        <div><img src="https://i.ibb.co/jJxmTxp/8ft.png" alt=""></div>
+        <div><img src="https://i.ibb.co/n1V2qJf/8ft-1ton.png" alt=""></div>
+        <div><img src="https://i.ibb.co/ZWW3qF7/Ace-helper.png" alt=""></div>
+        <div><img src="https://i.ibb.co/Vg6GLZH/Ace-helper-lab.png" alt=""></div>
+        <div><img src="https://i.ibb.co/PNnGVK3/tata-407.png" alt=""></div>
+        <div><img src="https://i.ibb.co/bbknR8M/tata-Ace.png" alt=""></div>
+      </div>
+    </div>
+    <hr>
+    <div id="resResult">
+      <img
+        src="https://d3o1t8vp7n8wsg.cloudfront.net/assets/website_revamp/large_vehicles/tata_ace_closed-e92a36b3508e6e3b1804fd2015adbfb6c948bc35afab36699440785ed83b5b24.png"
+        alt="">
+      <div id="resDetail">
+        <div class="space1">
+          <div>
+            <h3 class="rent">RENT 8FT PICKUP</h3>
+          </div>
+          <div>
+            <div class="space">
+              <div>Capacity: </div>
+              <b>1250kg</b>
+            </div>
+            <div class="space">
+              <div>Size(LxBxH): </div>
+              <b>9ft x 5ft x 6ft</b>
+            </div>
+          </div>
+        </div>
+        <div id="qote">Fares starting from <div id="amt">₹325</div>
+        </div>
+        <div id="para">
+          <p>Base fare includes 1.0 km distance and 90 minutes of time</p>
+          <p>Pricing may vary based on your locality.</p>
+          <p>Road tax, parking etc as applicable over and above ride fare.</p>
+        </div>
+        <div class="knowMore">KNOW MORE</div>
+      </div>
+    </div>
+
+    <div class="offer1">
+      <div id="tag">WE ARE TRANSFORMING CITIES</div>
+      <div class="bar"></div>
+    </div>
+    <p class="present">We are present right where you need us and take care of all your logistics requirements. Our
+      cost-effective solutions make us the right partner for your business, enterprise or for your household goods
+      movement anywhere in India.</p>
+    <div id="imageDiv">
+      <div class="images">
+        <div>
+          <img src="https://i.ibb.co/JmxqF7q/1.png" alt="">
+          <p class="font">Mumbai</p>
+        </div>
+        <div>
+          <img src="https://i.ibb.co/BCTQV0m/1.png" alt="">
+          <p class="font">Delhi NCR</p>
+        </div>
+        <div>
+          <img src="https://i.ibb.co/HzY8kHw/3.png" alt="">
+          <p class="font">Banglore</p>
+        </div>
+        <div>
+          <img src="https://i.ibb.co/h1rZM7h/4.png" alt="">
+          <p class="font">Hydrabad</p>
+        </div>
+        <div>
+          <img src="https://i.ibb.co/Wx6vpmZ/5.png" alt="">
+          <p class="font">Chennai</p>
+        </div>
+        <div>
+          <img src="https://i.ibb.co/PZ1Yxn4/6.png" alt="">
+          <p class="font">Ahmedabad</p>
+        </div>
+        <div>
+          <img src="https://i.ibb.co/tMh0d8B/7.png" alt="">
+          <p class="font">Jaipur</p>
+        </div>
+        <div>
+          <img src="https://i.ibb.co/K0x7xFG/8.png" alt="">
+          <p class="font">Pune</p>
+        </div>
+      </div>
+
+      <div class="images">
+        <div>
+          <img src="https://i.ibb.co/SJmMqyG/9.png" alt="">
+          <p class="font">Kolkata</p>
+        </div>
+        <div>
+          <img src="https://i.ibb.co/rbg1QGM/10.png" alt="">
+          <p class="font">Surat</p>
+        </div>
+        <div>
+          <img src="https://i.ibb.co/5WrCJQ3/11.png" alt="">
+          <p class="font">Lucknow</p>
+        </div>
+        <div>
+          <img src="https://i.ibb.co/qkwCT7J/12.png" alt="">
+          <p class="font">Coimbatore</p>
+        </div>
+        <div>
+          <img src="https://i.ibb.co/K2Z24rp/13.png" alt="">
+          <p class="font">Indore</p>
+        </div>
+        <div>
+          <img src="https://i.ibb.co/wQxWJVS/14.png" alt="">
+          <p class="font">Nagpur</p>
+        </div>
+        <div>
+          <img src="https://i.ibb.co/1RLgW6r/15.png" alt="">
+          <p class="font">Chandigarh</p>
+        </div>
+      </div>
+    </div>
+    <div id="enterprise">
+      <div class="image">
+      <img src="https://i.ibb.co/cxTZJRq/ent.png" alt="">
+    </div>
+      <h3>For Enterprice</h3>
+      <br>
+      <p class="blk">Porter offers the most efficient and time bound logistic services for businesses. With our huge fleet of vehicles we take care of your peak business requirements and bulk booking challenges. Clients also benefit from significant cost savings and improved SLA.</p>
+      <div class="knowMore2">KNOW MORE</div>
+    </div>
+
+
+
+
+    <!-- ////////////////////// Footer Start /////////////// -->
+    <div id="end">
+    </div>
+
+</body>
+
+</html>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+<script type="module" src="city_tempo.js"></script>
