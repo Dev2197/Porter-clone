@@ -37,14 +37,14 @@ function navbar(){
 
   <div id="navbar_container2">
       <div id="nav2_left">
-          <p>CITY TEMPO</p>
-          <p>PACKERS & MOVERS</p>
-          <p>DRIVER PARTNERS</p>
-          <p>FOR ENTERPRISE</p>
+      <a href=""><p>CITY TEMPO</p></a>
+      <a href=""><p>PACKERS & MOVERS</p></a>
+      <a href=""><p>DRIVER PARTNERS</p></a>
+      <a href=""><p>FOR ENTERPRISE</p></a>
       </div>
       <div id="nav2_right">
-          <p>Track Order</p>
-          <p>Support</p>
+      <a href=""><p>Track Order</p></a>
+      <a href=""><p>Support</p></a>
       </div>
   </div>
     `
