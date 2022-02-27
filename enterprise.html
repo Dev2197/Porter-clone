@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/Enterprise/enterprise.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  </head>
+  <style>
+    body {
+      margin: 0px;
+      font-family: "Titillium Web", sans-serif;
+      -webkit-font-smoothing: antialiased;
+      background-color: white;
+    }
+    #cityList {
+      width: 225px;
+      position: absolute;
+      background-color: white;
+      height: 148px;
+      overflow-y: scroll;
+      display: flex;
+      flex-direction: column;
+      top: 20%;
+      left: 77%;
+      /* text-align: center; */
+      box-shadow: 0px 5px 5px -3px rgb(0 0 0 / 20%),
+        0px 8px 10px 1px rgb(0 0 0 / 14%), 0px 3px 14px 2px rgb(0 0 0 / 12%);
+      display: none;
+    }
+    #cityList > div,
+    #tripList > div {
+      margin-left: 10%;
+      cursor: pointer;
+    }
+    #cityList > div > span {
+      margin-right: 20px;
+    }
+    #tripList > div:hover {
+      background-color: lightgray;
+    }
+    #tripList {
+      width: 225px;
+      position: absolute;
+      background-color: white;
+      display: flex;
+      flex-direction: column;
+      top: 53%;
+      left: 77%;
+      box-shadow: 0px 5px 5px -3px rgb(0 0 0 / 20%),
+        0px 8px 10px 1px rgb(0 0 0 / 14%), 0px 3px 14px 2px rgb(0 0 0 / 12%);
+      display: none;
+    }
+  </style>
+  <body>
+    <div id="en-root">
+      <div class="enterprise-desktop-banner-container">
+        <div id="navbar"></div>
+        <div class="common-desktop-banner-container">
+          <picture
+            ><source
+              class="banner-img"
+              srcset="
+                https://d35ppnqksufxmo.cloudfront.net/frontend_website/fa5a792e1046725074cf1178cbef248d.webp
+              "
+              type="image/webp" />
+            <source
+              class="banner-img"
+              srcset="
+                https://d35ppnqksufxmo.cloudfront.net/frontend_website/37e0d89461ca39f25e6b9d5efbbbceea.png
+              "
+              type="image/png" />
+            <img
+              class="banner-img"
+              alt="Enterprise Banner"
+              src="https://d35ppnqksufxmo.cloudfront.net/frontend_website/37e0d89461ca39f25e6b9d5efbbbceea.png"
+              style="height: 60rem; width: 98.5vw"
+          /></picture>
+          <div class="banner-title" id="enterprise-desktop-banner-title">
+            A simple and fast logistics delivery service made for your business
+          </div>
+        </div>
+        <form class="enterprise-form-container modal-desktop">
+          <div class="en-head">FOR ENTERPRISES</div>
+          <div class="en-select-cities">
+            <input type="text" id="en-input-cities" />
+            <label id="span-cities">Select Cities</label>
+            <svg
+              class="MuiSvgIcon-root MuiSelect-icon MuiSelect-iconOutlined"
+              focusable="false"
+              viewBox="0 0 24 24"
+              aria-hidden="true"
+            >
+              <path d="M7 10l5 5 5-5z"></path>
+            </svg>
+          </div>
+          <div class="en-contact">
+            <input type="text" id="en-input-contact" />
+            <label id="span-contact">Contact Person</label>
+          </div>
+          <div class="en-company">
+            <input type="text" id="en-input-company" />
+            <label id="span-company">Company Name</label>
+          </div>
+          <div class="en-mobile">
+            <input type="number" id="en-input-mobile" />
+            <span class="tel">+91 - </span>
+            <label id="span-mobile">Mobile Number</label>
+          </div>
+          <div class="en-select-trips">
+            <input type="text" id="en-input-trips" />
+            <label id="span-trips">Monthly trips</label>
+            <svg
+              class="MuiSvgIcon-root1"
+              focusable="false"
+              viewBox="0 0 24 24"
+              aria-hidden="true"
+            >
+              <path d="M7 10l5 5 5-5z"></path>
+            </svg>
+          </div>
+          <div class="en-email">
+            <input type="email" id="en-input-email" />
+            <label id="span-email">Email Address</label>
+          </div>
+          <div class="en-designation">
+            <input type="text" id="en-input-designation" />
+            <label id="span-designation">Contact Designation</label>
+          </div>
+          <button class="request-button">REQUEST CALLBACK</button>
+          <br />
+          <br />
+        </form>
+        <div class="desktop-features-container">
+          <div class="title">Why use Porter for Enterprise?</div>
+          <div class="bar"></div>
+          <div class="image-wrapper">
+            <div>
+              <img src="./images/image1.png" alt="" id="img1" />
+              <h3>Pay per Use</h3>
+              <p>
+                No fixed monthly contracts. Pay only for the time & distance you
+                use.
+              </p>
+            </div>
+            <div>
+              <img src="./images/image2.png" alt="" id="img2" />
+              <h3 class="title">Greater Control</h3>
+              <p>Get visibility of all your hub level logistics movement.</p>
+            </div>
+            <div>
+              <img src="./images/image3.png" alt="" id="img3" />
+              <h3 class="title">Hassle Free Accounting</h3>
+              <p>
+                Get rid of order level payment & reimbursement. Pay centrally
+                for Pan India usage.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="desktop-growth-container">
+          <div class="growth-data-wrapper">
+            <div class="growth-title">OUR GROWING NETWORK</div>
+            <div class="growth-section">
+              <div class="growth-data">
+                <div class="heading">15</div>
+                <div class="desc">CITIES</div>
+              </div>
+              <div class="growth-data">
+                <div class="heading">2500+</div>
+                <div class="desc">ENTERPRISE CLIENTS</div>
+              </div>
+              <div class="growth-data">
+                <div class="heading">300,000</div>
+                <div class="desc">DRIVER PARTNERS</div>
+              </div>
+              <div class="growth-data">
+                <div class="heading">75,000</div>
+                <div class="desc">MONTHLY ENTERPRISE TRIP</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="desktop-testimonial-container">
+          <div class="title">GROWING BUSINESS</div>
+          <div class="bar"></div>
+          <div class="profile-wrapper">
+            <div class="profile-container">
+              <div class="description">
+                “Porter has emerged as a very reliable logistics provider and
+                has provided us with a good option to scale with better SLAs.”
+              </div>
+              <div class="title">Logistics Manager</div>
+              <div class="sub-title">at a Leading FMCG MNC</div>
+              <div class="highlight"></div>
+            </div>
+            <div class="profile-container">
+              <div class="description">
+                “They helped us with ground level sensitivity on vehicle
+                utilisation. Their gps tracking system helped us ensure delivery
+                in time and detect inefficiencies.”
+              </div>
+              <div class="title">CEO</div>
+              <div class="sub-title">of an Ecommerce company</div>
+              <div class="highlight"></div>
+            </div>
+            <div class="profile-container">
+              <div class="description">
+                “We had introduced Porter in Mumbai for our fleet, they
+                performed beyond expectations in terms of vehicle deployment and
+                helped us scale at a much faster rate. This was done with
+                complete visibility of service data on daily basis which helped
+                understand the problems and immediate rectification of
+                problems.”
+              </div>
+              <div class="title">Logistics Head</div>
+              <div class="sub-title">at a Manufacturing plant</div>
+              <div class="highlight"></div>
+            </div>
+          </div>
+        </div>
+        <div class="enterprise-business-container">
+          <div class="heading">
+            <div class="title">INDUSTRIES WE SERVE</div>
+            <div class="bar"></div>
+          </div>
+          <div class="enterprise-business-content">
+            <div class="img-wrapper">
+              <picture
+                ><source
+                  class="img"
+                  srcset="
+                    https://d35ppnqksufxmo.cloudfront.net/frontend_website/fd047a61e3a256afcfb16f1f3227239a.webp
+                  "
+                  type="image/webp" />
+                <source
+                  class="img"
+                  srcset="
+                    https://d35ppnqksufxmo.cloudfront.net/frontend_website/e07f47724aac7f4966429c48962b0b84.png
+                  "
+                  type="image/png" />
+                <img
+                  class="img"
+                  alt="Business Image"
+                  src="https://d35ppnqksufxmo.cloudfront.net/frontend_website/e07f47724aac7f4966429c48962b0b84.png"
+                  style="height: auto; width: 86%"
+              /></picture>
+            </div>
+            <div class="info">
+              <div class="description">
+                The expertise and experience we have in handling a wide range of
+                goods make us the most efficient and competent logistics partner
+                for small to large enterprise! We transport anything and
+                everything ranging from agricultural goods, FMCG, electronic
+                appliances, pharmacy and medical supplies, bulk couriers,
+                business parcels. Other goods we transport include frozen and
+                processed foods, Ecommerce related merchandise and electronic
+                goods.
+              </div>
+              <div class="desktop-business-areas">
+                <div class="business-areas-wrapper">
+                  <div class="business-areas">
+                    <div class="wrapper-left">
+                      <div class="business-left">
+                        ELECTRONICS &amp; APPLIANCES
+                      </div>
+                    </div>
+                    <div class="wrapper-right">
+                      <div class="business-right">FURNITURES</div>
+                    </div>
+                    <div class=""></div>
+                  </div>
+                  <div class="business-areas">
+                    <div class="wrapper-left">
+                      <div class="business-left">
+                        CHEMICALS &amp; PHARMACEUTICALS
+                      </div>
+                    </div>
+                    <div class="wrapper-right">
+                      <div class="business-right">CONSTRUCTION MATERIALS</div>
+                    </div>
+                    <div class="separator"></div>
+                  </div>
+                  <div class="business-areas">
+                    <div class="wrapper-left">
+                      <div class="business-left">
+                        F&amp;Vs &amp; PROCESSED FOODS
+                      </div>
+                    </div>
+                    <div class="wrapper-right">
+                      <div class="business-right">E-COMMERCE</div>
+                    </div>
+                    <div class="separator"></div>
+                  </div>
+                  <div class="business-areas">
+                    <div class="wrapper-left">
+                      <div class="business-left">COURIERS &amp; LOGISTICS</div>
+                    </div>
+                    <div class="wrapper-right">
+                      <div class="business-right">FMCG</div>
+                    </div>
+                    <div class="separator"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="query-container">
+          <div
+            class="query-img-container"
+            style="
+              background-image: url('https://d35ppnqksufxmo.cloudfront.net/frontend_website/8bc86f316f7d4e4cfd63d98c88339915.svg');
+            "
+          ></div>
+          <div class="query-info">
+            <div class="title">FOR ANY MORE QUERY</div>
+            <div class="bar"></div>
+            <div class="query-desc">
+              <span class="desc">Reach us out on</span
+              ><a class="desc number" href="tel:9667309777"
+                ><div
+                  class="icon call-icon"
+                  style="
+                    background-image: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzYxIiBoZWlnaHQ9IjQ4IiB2aWV3Qm94PSIwIDAgMzYxIDQ4IiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8cGF0aCBkPSJNNDcuODM3NSAxOS41NTQyQzQ3LjQ4MTEgMTkuMTk4NiA0Ny40ODEyIDE4LjYyMTggNDcuODM3NiAxOC4yNjYyQzQ4LjE5MzUgMTcuOTExMyA0OC43NzAyIDE3LjkxMTMgNDkuMTI2MSAxOC4yNjYyTDU0LjIyNTkgMjMuMTgwNUM1NC42Nzk3IDIzLjYzMzEgNTQuNjc5NyAyNC4zNjczIDU0LjIyNTkgMjQuODE5OEw0OS4xMjYxIDI5LjczMzhDNDguNzcwMiAzMC4wODg3IDQ4LjE5MzUgMzAuMDg4NyA0Ny44Mzc2IDI5LjczMzhDNDcuNDgxMiAyOS4zNzgzIDQ3LjQ4MTIgMjguODAxNSA0Ny44Mzc3IDI4LjQ0Nkw1Mi40NjcxIDI0LjAwMjRMNDcuODM3NSAxOS41NTQyWiIgZmlsbD0iIzI5NjJGRiIvPgo8cGF0aCBkPSJNMTY5LjkyOCAyMC4zMzk1QzE3MC40MDIgMTkuODg2NyAxNzEuMTcxIDE5Ljg4NjggMTcxLjY0NSAyMC4zMzk3QzE3Mi4xMTggMjAuNzkxOSAxNzIuMTE4IDIxLjUyNDYgMTcxLjY0NSAyMS45NzY4TDE2NS4wOTMgMjguNDU2NUMxNjQuNDg5IDI5LjAzMyAxNjMuNTEgMjkuMDMzIDE2Mi45MDcgMjguNDU2NUwxNTYuMzU1IDIxLjk3NjhDMTU1Ljg4MiAyMS41MjQ2IDE1NS44ODIgMjAuNzkxOSAxNTYuMzU1IDIwLjMzOTdDMTU2LjgyOSAxOS44ODY5IDE1Ny41OTggMTkuODg2OSAxNTguMDcyIDIwLjMzOThMMTYzLjk5NyAyNi4yMjE3TDE2OS45MjggMjAuMzM5NVoiIGZpbGw9IiMyMTIxMjEiLz4KPHBhdGggZD0iTTg0LjcwNDggMjEuNzIyOEM4NS4wMDEyIDIxLjQyNTcgODUuNDgxOSAyMS40MjU3IDg1Ljc3ODEgMjEuNzIzQzg2LjA3NCAyMi4wMTk3IDg2LjA3NCAyMi41MDA2IDg1Ljc3ODEgMjIuNzk3M0w4MS42ODI5IDI3LjA1QzgxLjMwNTcgMjcuNDI4NCA4MC42OTM5IDI3LjQyODQgODAuMzE2OCAyNy4wNUw3Ni4yMjE5IDIyLjc5NzRDNzUuOTI2IDIyLjUwMDYgNzUuOTI2IDIyLjAxOTggNzYuMjIxOSAyMS43MjNDNzYuNTE4MSAyMS40MjU4IDc2Ljk5ODcgMjEuNDI1OCA3Ny4yOTUgMjEuNzIzTDgwLjk5OCAyNS41ODMzTDg0LjcwNDggMjEuNzIyOFoiIGZpbGw9IiMyMTIxMjEiLz4KPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xMTUuMjg5IDI0TDEyMS43MzMgMTcuNTU1OEMxMjIuMDg5IDE3LjE5OTkgMTIyLjA4OSAxNi42MjI4IDEyMS43MzMgMTYuMjY2OUMxMjEuMzc3IDE1LjkxMSAxMjAuOCAxNS45MTEgMTIwLjQ0NCAxNi4yNjY5TDExNCAyMi43MTEyTDEwNy41NTYgMTYuMjY2OUMxMDcuMiAxNS45MTEgMTA2LjYyMyAxNS45MTEgMTA2LjI2NyAxNi4yNjY5QzEwNS45MTEgMTYuNjIyOCAxMDUuOTExIDE3LjE5OTkgMTA2LjI2NyAxNy41NTU4TDExMi43MTEgMjRMMTA2LjI2NyAzMC40NDQyQzEwNS45MTEgMzAuODAwMSAxMDUuOTExIDMxLjM3NzIgMTA2LjI2NyAzMS43MzMxQzEwNi42MjMgMzIuMDg5IDEwNy4yIDMyLjA4OSAxMDcuNTU2IDMxLjczMzFMMTE0IDI1LjI4ODhMMTIwLjQ0NCAzMS43MzMxQzEyMC44IDMyLjA4OSAxMjEuMzc3IDMyLjA4OSAxMjEuNzMzIDMxLjczMzFDMTIyLjA4OSAzMS4zNzcyIDEyMi4wODkgMzAuODAwMSAxMjEuNzMzIDMwLjQ0NDJMMTE1LjI4OSAyNFoiIGZpbGw9IiMyMTIxMjEiLz4KPHBhdGggb3BhY2l0eT0iMC43MDI3MTciIGQ9Ik0yMzAgNDhDMjQzLjI1NSA0OCAyNTQgMzcuMjU0OCAyNTQgMjRDMjU0IDEwLjc0NTIgMjQzLjI1NSAwIDIzMCAwQzIxNi43NDUgMCAyMDYgMTAuNzQ1MiAyMDYgMjRDMjA2IDM3LjI1NDggMjE2Ljc0NSA0OCAyMzAgNDhaIiBmaWxsPSIjMjEyMTIxIi8+CjxwYXRoIGQ9Ik0yMjYuNzg0IDE4LjA3MjNDMjI2LjMzMSAxNy41OTgxIDIyNi4zMzEgMTYuODI5IDIyNi43ODQgMTYuMzU1QzIyNy4yMzYgMTUuODgxNyAyMjcuOTY5IDE1Ljg4MTcgMjI4LjQyMSAxNi4zNTVMMjM0LjkwMSAyMi45MDc0QzIzNS40NzcgMjMuNTEwOCAyMzUuNDc3IDI0LjQ4OTcgMjM0LjkwMSAyNS4wOTMxTDIyOC40MjEgMzEuNjQ1QzIyNy45NjkgMzIuMTE4MyAyMjcuMjM2IDMyLjExODMgMjI2Ljc4NCAzMS42NDVDMjI2LjMzMSAzMS4xNzExIDIyNi4zMzEgMzAuNDAyMSAyMjYuNzg0IDI5LjkyODFMMjMyLjY2NiAyNC4wMDMyTDIyNi43ODQgMTguMDcyM1oiIGZpbGw9IndoaXRlIi8+CjxwYXRoIGQ9Ik0zMDYuNSAxOS4xNzk1QzMwNC45MjcgMTkuMTc5NSAzMDMuNjI3IDIwLjQ3MTggMzAzLjYyNyAyMi4wNTEzQzMwMy42MjcgMjMuNjMwOCAzMDQuOTA2IDI0LjkyMzEgMzA2LjUgMjQuOTIzMUMzMDguMDk0IDI0LjkyMzEgMzA5LjM3MyAyMy42MzA4IDMwOS4zNzMgMjIuMDUxM0MzMDkuMzczIDIwLjQ3MTggMzA4LjA3MyAxOS4xNzk1IDMwNi41IDE5LjE3OTVaTTMwNi41IDI0LjMwNzdDMzA1LjI2MyAyNC4zMDc3IDMwNC4yNTYgMjMuMzAyNiAzMDQuMjU2IDIyLjA1MTNDMzA0LjI1NiAyMC44IDMwNS4yNjMgMTkuNzk0OSAzMDYuNSAxOS43OTQ5QzMwNy43MzcgMTkuNzk0OSAzMDguNzQ0IDIwLjggMzA4Ljc0NCAyMi4wNTEzQzMwOC43NDQgMjMuMzAyNiAzMDcuNzM3IDI0LjMwNzcgMzA2LjUgMjQuMzA3N1oiIGZpbGw9IiMyMTIxMjEiLz4KPHBhdGggZD0iTTMwNi41IDE2LjEwMjZDMzAzLjE0NSAxNi4xMDI2IDMwMC4zNTYgMTguNzI4MiAzMDAuMTI2IDIyLjA5MjNDMzAwLjA2MyAyMi45NTM5IDMwMC4xODkgMjMuNzk0OSAzMDAuNTAzIDI0LjYzNTlDMzAwLjc5NyAyNS40MzU5IDMwMS4zIDI2LjE5NDkgMzAxLjk1IDI2Ljg5MjNMMzA2LjI2OSAzMS43OTQ5QzMwNi4zMzIgMzEuODU2NCAzMDYuNDE2IDMxLjg5NzQgMzA2LjUgMzEuODk3NEMzMDYuNTg0IDMxLjg5NzQgMzA2LjY4OSAzMS44NTY0IDMwNi43MzEgMzEuNzk0OUwzMTEuMDI5IDI2Ljg5MjNDMzExLjcgMjYuMTk0OSAzMTIuMTgyIDI1LjQzNTkgMzEyLjQ3NiAyNC42MzU5QzMxMi43OSAyMy43OTQ5IDMxMi45MTYgMjIuOTUzOSAzMTIuODUzIDIyLjA5MjNDMzEyLjY0NCAxOC43MjgyIDMwOS44NTUgMTYuMTAyNiAzMDYuNSAxNi4xMDI2Wk0zMTEuOTEgMjQuNDEwM0MzMTEuNjM3IDI1LjE0ODcgMzExLjE5NyAyNS44MjU2IDMxMC41NjggMjYuNDYxNUwzMDYuNSAzMS4xMThMMzAyLjQxMSAyNi40NjE1QzMwMS44MDMgMjUuODI1NiAzMDEuMzYzIDI1LjE0ODcgMzAxLjA5IDI0LjQxMDNDMzAwLjgxOCAyMy42NTEzIDMwMC42OTIgMjIuODkyMyAzMDAuNzU1IDIyLjEzMzNDMzAwLjk0NCAxOS40NjY3IDMwMy4xNDUgMTYuNzE4IDMwNi41IDE2LjcxOEMzMDkuODU1IDE2LjcxOCAzMTIuMDc3IDE5LjQ2NjcgMzEyLjI0NSAyMi4xMzMzQzMxMi4zMDggMjIuODkyMyAzMTIuMTgyIDIzLjY3MTggMzExLjkxIDI0LjQxMDNaIiBmaWxsPSIjMjEyMTIxIi8+CjxwYXRoIGQ9Ik0xNi44NTM2IDI4LjU2NzJDMTYuNTI0OCAyOC4yMzk1IDE2LjA4MzEgMjguMDkwMSAxNS42NDMzIDI4LjExMzJMMTUuNjQ1IDI4LjExMThDMTMuNjc2NyAyOC4xOTU2IDEzLjA1MyAyOS43NDU2IDEyLjkxMjcgMzAuMTk1OUM2LjQzNjEyIDI4LjA3NSA1Ljg0MTggMjMuMTExOSA1Ljg0MTggMjMuMTExOUw3LjA5NjMyIDIxLjM1MjNMNS44NDE4IDIzLjExMTlDNy4xMjM3IDIyLjU4NDYgNy42MTkzNSAyMS42MzI0IDcuODExNTcgMjAuOTU1OUM3LjkxMzk1IDIwLjcwNjcgNy45NTQ3MyAyMC40Mzk4IDcuOTMyNzcgMjAuMTc5MUM3LjkzMjc3IDIwLjE3OTEgNy45MzI3NyAyMC4xODA4IDcuOTMyNzcgMjAuMTgzOUM3LjkzMjc3IDIwLjE4MTQgNy45MzI3NyAyMC4xNzkxIDcuOTMyNzcgMjAuMTc5MUM3LjkwMjI1IDE5LjgxNjMgNy43NTEzOSAxOS40NjYxIDcuNDc5MDQgMTkuMTkzMkw0LjMxNzIgMTYuMDMwNUMzLjY4ODk0IDE1LjQwMjMgMi42NDU0NSAxNS40MjE0IDEuOTkyNjYgMTYuMDc0MUwxLjEwMTQ2IDE2Ljk3MDVMMS4xMjU3IDE2Ljk5NDdDMC44MjY4MjcgMTcuMzc2IDAuNTc3MjkgMTcuODE1OCAwLjM5MTM1IDE4LjI5QzAuMjE5OTU0IDE4Ljc0MTUgMC4xMTMyOTUgMTkuMTcyMSAwLjA2NDUyODMgMTkuNjAzOUMtMC4zNTI2OTcgMjMuMDY1NCAxLjIyODk0IDI2LjIyODcgNS41MjE1MyAzMC41MjEzQzExLjQ1NTEgMzYuNDU0NiAxNi4yMzY4IDM2LjAwNjMgMTYuNDQzMiAzNS45ODQzQzE2Ljg5MjQgMzUuOTMwNyAxNy4zMjMgMzUuODIzMiAxNy43NjA4IDM1LjY1MzJDMTguMjMwOCAzNS40Njk1IDE4LjY3MDMgMzUuMjIwMyAxOS4wNTEzIDM0LjkyMkwxOS4wNzA3IDM0LjkzOTRMMTkuOTczNSAzNC4wNTUzQzIwLjYyNDkgMzMuNDAyNSAyMC42NDM3IDMyLjM1OTYgMjAuMDE1OCAzMS43MjkzTDE2Ljg1MzYgMjguNTY3MlpNNy45MzI3NyAyMC4xOTY4QzcuOTMyNzcgMjAuMTkzNiA3LjkzMjc3IDIwLjE5MDUgNy45MzI3NyAyMC4xODgyQzcuOTMyNzcgMjAuMTkwOCA3LjkzMjc3IDIwLjE5MzQgNy45MzI3NyAyMC4xOTY4Wk03Ljg2OTc0IDIwLjcxODdDNy44Njk3NCAyMC43MTgxIDcuODcwMDMgMjAuNzE3MiA3Ljg3MDAzIDIwLjcxNjdDNy44NzAwMyAyMC43MTc1IDcuODcwMDMgMjAuNzE4MSA3Ljg2OTc0IDIwLjcxODdaTTcuOTMyNDggMjAuMjE3QzcuOTMyNDggMjAuMjE0MiA3LjkzMjQ4IDIwLjIxMTMgNy45MzI3NyAyMC4yMDg4QzcuOTMyNDggMjAuMjExNiA3LjkzMjQ4IDIwLjIxNDIgNy45MzI0OCAyMC4yMTdaTTIyLjY0MzIgMjYuODcyNEMyMS45OTAxIDI2Ljg3MjQgMjEuNDYwNSAyNi4zNDI4IDIxLjQ2MDUgMjUuNjg5N0MyMS40NjA1IDE5LjQ0NTYgMTYuMzgwNSAxNC4zNjUzIDEwLjEzNjEgMTQuMzY1M0M5LjQ4MzAzIDE0LjM2NTMgOC45NTM0NCAxMy44MzU3IDguOTUzNDQgMTMuMTgyN0M4Ljk1MzQ0IDEyLjUyOTYgOS40ODMwMyAxMiAxMC4xMzYxIDEyQzEzLjc5MjcgMTIgMTcuMjMwNiAxMy40MjM5IDE5LjgxNjEgMTYuMDA5N0MyMi40MDE2IDE4LjU5NTUgMjMuODI1OCAyMi4wMzMxIDIzLjgyNTggMjUuNjg5N0MyMy44MjU4IDI2LjM0MjggMjMuMjk2NSAyNi44NzI0IDIyLjY0MzIgMjYuODcyNFpNMTguMDAyNiAyNi4zMjM3QzE3LjM0OTYgMjYuMzIzNyAxNi44MiAyNS43OTQxIDE2LjgyIDI1LjE0MUMxNi44MiAyMS43NTgyIDE0LjA2NzkgMTkuMDA2MSAxMC42ODUxIDE5LjAwNjFDMTAuMDMyIDE5LjAwNjEgOS41MDI0MiAxOC40NzY1IDkuNTAyNDIgMTcuODIzNUM5LjUwMjQyIDE3LjE3MDQgMTAuMDMyIDE2LjY0MDggMTAuNjg1MSAxNi42NDA4QzE1LjM3MjEgMTYuNjQwOCAxOS4xODUzIDIwLjQ1NCAxOS4xODUzIDI1LjE0MUMxOS4xODUzIDI1Ljc5NDEgMTguNjU2IDI2LjMyMzcgMTguMDAyNiAyNi4zMjM3WiIgZmlsbD0iIzNBM0EzQSIvPgo8cGF0aCBkPSJNMzQ5Ljg1NCAyOC41NjcyQzM0OS41MjUgMjguMjM5NSAzNDkuMDgzIDI4LjA5MDEgMzQ4LjY0MyAyOC4xMTMyTDM0OC42NDUgMjguMTExOEMzNDYuNjc3IDI4LjE5NTYgMzQ2LjA1MyAyOS43NDU2IDM0NS45MTMgMzAuMTk1OUMzMzkuNDM2IDI4LjA3NSAzMzguODQyIDIzLjExMTkgMzM4Ljg0MiAyMy4xMTE5TDM0MC4wOTYgMjEuMzUyM0wzMzguODQyIDIzLjExMTlDMzQwLjEyNCAyMi41ODQ2IDM0MC42MTkgMjEuNjMyNCAzNDAuODEyIDIwLjk1NTlDMzQwLjkxNCAyMC43MDY3IDM0MC45NTUgMjAuNDM5OCAzNDAuOTMzIDIwLjE3OTFDMzQwLjkzMyAyMC4xNzkxIDM0MC45MzMgMjAuMTgwOCAzNDAuOTMzIDIwLjE4MzlDMzQwLjkzMyAyMC4xODE0IDM0MC45MzMgMjAuMTc5MSAzNDAuOTMzIDIwLjE3OTFDMzQwLjkwMiAxOS44MTYzIDM0MC43NTEgMTkuNDY2MSAzNDAuNDc5IDE5LjE5MzJMMzM3LjMxNyAxNi4wMzA1QzMzNi42ODkgMTUuNDAyMyAzMzUuNjQ1IDE1LjQyMTQgMzM0Ljk5MyAxNi4wNzQxTDMzNC4xMDEgMTYuOTcwNUwzMzQuMTI2IDE2Ljk5NDdDMzMzLjgyNyAxNy4zNzYgMzMzLjU3NyAxNy44MTU4IDMzMy4zOTEgMTguMjlDMzMzLjIyIDE4Ljc0MTUgMzMzLjExMyAxOS4xNzIxIDMzMy4wNjUgMTkuNjAzOUMzMzIuNjQ3IDIzLjA2NTQgMzM0LjIyOSAyNi4yMjg3IDMzOC41MjIgMzAuNTIxM0MzNDQuNDU1IDM2LjQ1NDYgMzQ5LjIzNyAzNi4wMDYzIDM0OS40NDMgMzUuOTg0M0MzNDkuODkyIDM1LjkzMDcgMzUwLjMyMyAzNS44MjMyIDM1MC43NjEgMzUuNjUzMkMzNTEuMjMxIDM1LjQ2OTUgMzUxLjY3IDM1LjIyMDMgMzUyLjA1MSAzNC45MjJMMzUyLjA3MSAzNC45Mzk0TDM1Mi45NzQgMzQuMDU1M0MzNTMuNjI1IDMzLjQwMjUgMzUzLjY0NCAzMi4zNTk2IDM1My4wMTYgMzEuNzI5M0wzNDkuODU0IDI4LjU2NzJaTTM0MC45MzMgMjAuMTk2OEMzNDAuOTMzIDIwLjE5MzYgMzQwLjkzMyAyMC4xOTA1IDM0MC45MzMgMjAuMTg4MkMzNDAuOTMzIDIwLjE5MDggMzQwLjkzMyAyMC4xOTM0IDM0MC45MzMgMjAuMTk2OFpNMzQwLjg3IDIwLjcxODdDMzQwLjg3IDIwLjcxODEgMzQwLjg3IDIwLjcxNzIgMzQwLjg3IDIwLjcxNjdDMzQwLjg3IDIwLjcxNzUgMzQwLjg3IDIwLjcxODEgMzQwLjg3IDIwLjcxODdaTTM0MC45MzIgMjAuMjE3QzM0MC45MzIgMjAuMjE0MiAzNDAuOTMyIDIwLjIxMTMgMzQwLjkzMyAyMC4yMDg4QzM0MC45MzIgMjAuMjExNiAzNDAuOTMyIDIwLjIxNDIgMzQwLjkzMiAyMC4yMTdaTTM1NS42NDMgMjYuODcyNEMzNTQuOTkgMjYuODcyNCAzNTQuNDYgMjYuMzQyOCAzNTQuNDYgMjUuNjg5N0MzNTQuNDYgMTkuNDQ1NiAzNDkuMzgxIDE0LjM2NTMgMzQzLjEzNiAxNC4zNjUzQzM0Mi40ODMgMTQuMzY1MyAzNDEuOTUzIDEzLjgzNTcgMzQxLjk1MyAxMy4xODI3QzM0MS45NTMgMTIuNTI5NiAzNDIuNDgzIDEyIDM0My4xMzYgMTJDMzQ2Ljc5MyAxMiAzNTAuMjMxIDEzLjQyMzkgMzUyLjgxNiAxNi4wMDk3QzM1NS40MDIgMTguNTk1NSAzNTYuODI2IDIyLjAzMzEgMzU2LjgyNiAyNS42ODk3QzM1Ni44MjYgMjYuMzQyOCAzNTYuMjk3IDI2Ljg3MjQgMzU1LjY0MyAyNi44NzI0Wk0zNTEuMDAzIDI2LjMyMzdDMzUwLjM1IDI2LjMyMzcgMzQ5LjgyIDI1Ljc5NDEgMzQ5LjgyIDI1LjE0MUMzNDkuODIgMjEuNzU4MiAzNDcuMDY4IDE5LjAwNjEgMzQzLjY4NSAxOS4wMDYxQzM0My4wMzIgMTkuMDA2MSAzNDIuNTAyIDE4LjQ3NjUgMzQyLjUwMiAxNy44MjM1QzM0Mi41MDIgMTcuMTcwNCAzNDMuMDMyIDE2LjY0MDggMzQzLjY4NSAxNi42NDA4QzM0OC4zNzIgMTYuNjQwOCAzNTIuMTg1IDIwLjQ1NCAzNTIuMTg1IDI1LjE0MUMzNTIuMTg1IDI1Ljc5NDEgMzUxLjY1NiAyNi4zMjM3IDM1MS4wMDMgMjYuMzIzN1oiIGZpbGw9IiMyOTYyRkYiLz4KPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0yNzkuNzg0IDI0LjQ5NUwyNzUuMjU4IDI4Ljc5NDlDMjc0Ljk3IDI5LjA2ODQgMjc0LjUwMyAyOS4wNjg0IDI3NC4yMTUgMjguNzk0OUMyNzMuOTI4IDI4LjUyMTUgMjczLjkyOCAyOC4wNzc5IDI3NC4yMTUgMjcuODA0N0wyNzguMjIgMjMuOTk5OUwyNzQuMjE2IDIwLjE5NThDMjczLjkyOCAxOS45MjI0IDI3My45MjggMTkuNDc5IDI3NC4yMTYgMTkuMjA1NkMyNzQuNTA0IDE4LjkzMTUgMjc0Ljk3MSAxOC45MzE1IDI3NS4yNTggMTkuMjA1NkwyNzkuNzg0IDIzLjUwNTVDMjc5LjkyOCAyMy42NDIxIDI4MCAyMy44MjA4IDI4MCAyMy45OTk5QzI4MCAyNC4xNzkxIDI3OS45MjggMjQuMzU5MSAyNzkuNzg0IDI0LjQ5NVoiIGZpbGw9IndoaXRlIi8+Cjwvc3ZnPgo=');
+                    height: 0.8rem;
+                    width: 1.1rem;
+                  "
+                ></div>
+                9667309777</a
+              ><span class="desc"
+                >today to know more about us and get benefits from our managed
+                services offering. Our expert team will be happy to know more
+                about your business and recommend the best possible solutions
+                tailored to your logistics needs.</span
+              >
+            </div>
+            <div class="redirect-button">Request Callback</div>
+          </div>
+        </div>
+        <div id="faq-section"></div>
+        <div id="footer"></div>
+      </div>
+    </div>
+    <div id="cityList">
+      <div>
+        <span><input type="checkbox" /></span>
+        <span>mumbai</span>
+      </div>
+      <div>
+        <span><input type="checkbox" /></span>
+        <span>delhi</span>
+      </div>
+      <div>
+        <span><input type="checkbox" /></span>
+        <span>bangalore</span>
+      </div>
+      <div>
+        <span><input type="checkbox" /></span>
+        <span>chennai</span>
+      </div>
+      <div>
+        <span><input type="checkbox" /></span>
+        <span>jaipur</span>
+      </div>
+      <div>
+        <span><input type="checkbox" /></span>
+        <span>pune</span>
+      </div>
+      <div>
+        <span><input type="checkbox" /></span>
+        <span>kolkata</span>
+      </div>
+      <div>
+        <span><input type="checkbox" /></span>
+        <span>indore</span>
+      </div>
+      <div>
+        <span><input type="checkbox" /></span>
+        <span>nagpur</span>
+      </div>
+      <div>
+        <span><input type="checkbox" /></span>
+        <span>lucknow</span>
+      </div>
+    </div>
+    <div id="tripList">
+      <div class="tripdiv">
+        <option>None</option>
+      </div>
+      <div class="tripdiv">
+        <option value="">Less than 20</option>
+      </div>
+      <div class="tripdiv">
+        <option value="">21 to 100</option>
+      </div>
+      <div class="tripdiv">
+        <option value="">More than 100</option>
+      </div>
+    </div>
+  </body>
+</html>
+<script>
+  $(document).ready(function () {
+    let cities = $(".en-select-cities").val();
+    let contact_person = $("#en-input-contact").val();
+    let company = $("#en-input-company").val();
+    let mobile = $("#en-input-mobile").val();
+    let trips = $().val();
+    let email = $("#en-input-email").val();
+    let designation = $("#en-input-designation").val();
+    console.log("val", contact_person);
+    $("div.tripdiv").click(function () {
+      $("#tripList").hide();
+    });
+    $(".en-select-cities").click(function () {
+      $("#cityList").toggle();
+    });
+    $(".en-select-trips").click(function () {
+      $("#tripList").toggle();
+    });
+
+    $("#en-input-cities").focus(function () {
+      $("#span-cities").addClass("ftp");
+      $(".en-select-cities").css("border", "2px solid #2a62fe");
+      // $("#cityList").css("visibility", "visible");
+    });
+    $("#en-input-cities").blur(function () {
+      $("#span-cities").removeClass("ftp");
+      $(".en-select-cities").css("border", "1px solid");
+    });
+
+    $("#en-input-contact").focus(function () {
+      $("#span-contact").addClass("ftp1");
+      $(".en-contact").css("border", "2px solid #2a62fe");
+    });
+    $("#en-input-contact").blur(function () {
+      if ($(this).val().length <= 0) {
+        $("#span-contact").removeClass("ftp1");
+        $(".en-contact").css("border", "1px solid");
+      }
+    });
+
+    $("#en-input-company").focus(function () {
+      $("#span-company").addClass("ftp2");
+      $(".en-company").css("border", "2px solid #2a62fe");
+    });
+    $("#en-input-company").blur(function () {
+      if ($(this).val().length <= 0) {
+        $("#span-company").removeClass("ftp2");
+        $(".en-company").css("border", "1px solid");
+      }
+    });
+
+    $("#en-input-trips").focus(function () {
+      $("#span-trips").addClass("ftp6");
+      $(".en-select-trips").css("border", "2px solid #2a62fe");
+    });
+    $("#en-input-trips").blur(function () {
+      $("#span-trips").removeClass("ftp6");
+      $(".en-select-trips").css("border", "1px solid");
+    });
+    $("#en-input-email").focus(function () {
+      $("#span-email").addClass("ftp4");
+      $(".en-email").css("border", "2px solid #2a62fe");
+    });
+    $("#en-input-email").blur(function () {
+      if ($(this).val().length <= 0) {
+        $("#span-email").removeClass("ftp4");
+        $(".en-email").css("border", "1px solid");
+      }
+    });
+    $("#en-input-designation").focus(function () {
+      $("#span-designation").addClass("ftp5");
+      $(".en-designation").css("border", "2px solid #2a62fe");
+    });
+    $("#en-input-designation").blur(function () {
+      if ($(this).val().length <= 0) {
+        $("#span-designation").removeClass("ftp5");
+        $(".en-designation").css("border", "1px solid");
+      }
+    });
+    $("#en-input-mobile").focus(function () {
+      $("#span-mobile").css("color", "#2a62fe");
+      $(".en-mobile").css("border", "2px solid #2a62fe");
+    });
+    $("#en-input-mobile").blur(function () {
+      if ($(this).val().length <= 0) {
+        $("#span-mobile").css("color", "grey");
+        $(".en-mobile").css("border", "1px solid");
+      }
+    });
+  });
+</script>
