@@ -1,0 +1,244 @@
+body {
+    font-family: "Titillium Web", sans-serif;
+}
+
+#container {
+    margin-left: auto;
+    margin-top: 60px;
+    margin-right: auto;
+    background: url("https://d35ppnqksufxmo.cloudfront.net/frontend_website/c504ce6570402f768a2bfe217b49cb71.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+    padding: 20px;
+}
+
+#adv_head {
+    text-align: center;
+}
+
+#adv_grid {
+    display: grid;
+    grid-template-columns: 300px 300px 300px;
+    justify-content: space-around;
+    margin: 0 180px;
+}
+
+.adv_txt {
+    text-align: center;
+}
+
+#head_form {
+    margin-left: 72%;
+    /* margin-top: 80px; */
+    border: 1px solid black;
+    padding: 2px;
+    background-color: #fff;
+    width: 24%;
+}
+
+.head_txt {
+    text-align: center;
+    font-size: 12px;
+}
+
+#head_low {
+    display: flex;
+    justify-content: space-between;
+}
+
+.Box {
+    height: 20px;
+    width: 91%;
+    height: 40px;
+    margin: 10px;
+    border-radius: 5px;
+    border: 2px solid black;
+}
+
+.Box1 {
+    height: 20px;
+    width: 41%;
+    height: 40px;
+    margin: 15px 10px;
+    border-radius: 5px;
+    border: 2px solid black;
+}
+
+.form_btn {
+    width: 94%;
+    margin: 15px 10px;
+    height: 40px;
+    border-radius: 5px;
+    color: #fff;
+    font-weight: bold;
+    background-color: #2962ff;
+}
+
+.opt {
+    padding: 10px;
+    height: 20px;
+}
+
+h2 {
+    margin-left: 10%;
+}
+
+#add_ben {
+    margin-left: 10%;
+}
+
+.add_txt {
+    text-align: center;
+}
+
+#add_grid {
+    display: grid;
+    grid-template-columns: 300px 300px 300px 300px;
+    justify-content: space-around;
+    margin: 0 70px;
+}
+
+#easy {
+    background-color: rgb(140, 100, 180);
+    padding: 20px;
+  /* top:-10%;
+  transform:rotate(2deg); */
+}
+
+#easy_div {
+    display: grid;
+    grid-template-columns: 39% 50%;
+    /* transform:rotate(-2deg); */
+}
+
+.easy_txt {
+    margin: 5% 20%;
+    color: white;
+    width: 90%;
+}
+
+.easy_txt>h5 {
+    margin: 0;
+    padding: 0;
+}
+
+.easy_img {
+    margin: 8% 12%;
+    
+}
+
+#easy_img {
+    height: 380px;
+    border-radius: 10px;
+}
+
+.adv_img {
+    margin-left: 5%;
+}
+
+#title_img {
+    width: 170px;
+}
+
+.testimonial_profile_container {
+    display: grid;
+    grid-template-columns: repeat(3, 35%);
+    grid-gap: 3%;
+    margin: 0 22%;
+}
+
+.description {
+    border: 1px solid grey;
+    box-shadow: 0 -5px 5px -5px #333, -5px 0 5px -5px #333, 5px 0 5px -5px #333;
+    padding: 20px;
+}
+
+.des-img {
+    margin-left: 170px;
+    margin-top: -200px;
+    margin-bottom: 80px;
+    border-radius: 50%;
+}
+
+.highlight {
+    position: relative;
+    padding: 1.6rem 2rem;
+    text-align: left;
+    color: white;
+    bottom: 0;
+    height: 50px;
+    background-image: linear-gradient(105deg, #2962ff, #5e0be0);
+}
+
+.highlight h3 {
+    margin: 1px;
+    padding: 0;
+}
+
+.App_download_section {
+    text-align: center;
+    margin-right: 50px;
+    width: 25%;
+}
+
+.heading {
+    color: #5e0be0;
+    font-size: 40px;
+    font-weight: bolder;
+}
+
+.bar {
+    width: 33px;
+    height: 5px;
+    background-color: #5e0be0;
+    border-radius: 5px;
+    border: none;
+    margin-left: 10%;
+}
+
+#own_div {
+    display: grid;
+    grid-template-columns: 39% 50%;
+}
+
+.own_txt {
+    margin: 3% 20%;
+    color: black;
+}
+
+.own_txt>h5 {
+    margin: 0;
+}
+
+.own_img {
+    margin: 8% 20%;
+}
+
+#own_img {
+    height: 350px;
+}
+
+.contact_btn {
+    width: 40%;
+    margin: 15px 9px;
+    height: 55px;
+    border-radius: 5px;
+    color: #fff;
+    font-weight: bold;
+    background: linear-gradient(98deg, #2962ff, #5e0be0);
+}
+
+.title_faq {
+    text-align: center;
+    padding-top: 40px;
+}
+
+.bar_faq {
+    width: 33px;
+    height: 5px;
+    background-color: #5e0be0;
+    border-radius: 5px;
+    border: none;
+    margin-left: 54%;
+}
