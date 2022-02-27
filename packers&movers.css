@@ -45,7 +45,7 @@
 #right_container{
     position: absolute;
     top: 155px;
-    left: 890px;
+    left: 73%;
     width: 330px;
     height: 480px;
     background-color: white;
@@ -431,4 +431,5 @@ h4{
      margin-top: 100px;
  }
   
+
  

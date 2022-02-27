@@ -3,9 +3,9 @@ function navbar(){
     return `
     <div id="navbar_container">
       <div id="nav_left">
-          <div id="nav_logo">
-              <img src="https://i.ibb.co/4tn5YV5/navporter-logo.png" alt="">
-          </div>
+      <div id="nav_logo">
+      <a href="index.html"><img src="https://i.ibb.co/4tn5YV5/navporter-logo.png" alt=""></a>
+  </div>
           <div >
               <p id="nav_heading">India's Largest Marketplace for Intracity Logistics</p>
           </div>
@@ -37,14 +37,14 @@ function navbar(){
 
   <div id="navbar_container2">
       <div id="nav2_left">
-      <a href=""><p>CITY TEMPO</p></a>
-      <a href=""><p>PACKERS & MOVERS</p></a>
-      <a href=""><p>DRIVER PARTNERS</p></a>
-      <a href=""><p>FOR ENTERPRISE</p></a>
+      <a href="index.html"><p>CITY TEMPO</p></a>
+      <a href="packers&movers.html"><p>PACKERS & MOVERS</p></a>
+      <a href="dandp.html"><p>DRIVER PARTNERS</p></a>
+      <a href="enterprise.html"><p>FOR ENTERPRISE</p></a>
       </div>
       <div id="nav2_right">
       <a href=""><p>Track Order</p></a>
-      <a href=""><p>Support</p></a>
+      <a href="support.html"><p>Support</p></a>
       </div>
   </div>
     `

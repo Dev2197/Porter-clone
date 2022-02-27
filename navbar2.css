@@ -2,6 +2,11 @@
     font-family: 'Titillium Web', sans-serif;;
 }
 
+a{
+    text-decoration: none;
+    color: #212121;
+}
+
 #navbar_container{
     /* border: 1px solid red; */
     width: 101.2%;
@@ -26,7 +31,7 @@
 #nav_logo{
     width: 150px;
 }
-#nav_logo > img{
+#nav_logo >a> img{
     width: 100%;
     height: 30px;
     margin-left: -30px;
@@ -68,15 +73,15 @@
     position: absolute;
 }
 #drive_title{
-    font-size: 14px;
+    font-size: 10px;
     font-weight: 550;
     margin-bottom: -10px;
     margin-top: 3px;
     margin-left: 7px;
 }
 #drive_desc{
-    font-size: 12px;
-    margin-left: 7px;
+    font-size: 10px;
+    margin-left: 5px;
 }
 #contact_info{
     display: flex;
