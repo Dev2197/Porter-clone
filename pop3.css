@@ -1,0 +1,108 @@
+.pop_container{
+    /* width: 800px; */
+    /* height: 500px; */
+    margin: auto;
+    /* border: 1px solid red; */
+    /* overflow: scroll; */
+    /* border-radius: 20px; */
+    /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
+}
+
+.step{
+    text-align: center;
+    font-size: 14px;
+    margin-bottom: -10px;
+    /* border: 1px solid red; */
+    margin: auto;
+    /* margin-left: 300px; */
+    /* margin-top: 50px; */
+}
+.popup_title{
+    text-align: center;
+    font-weight: 600;
+    font-size: 20px;
+}
+#pop3_sub_container1{
+    background-image: url("https://d35ppnqksufxmo.cloudfront.net/frontend_website/4f4ffb97d48a75ba3859747801c0a493.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 200px;
+    background-position: center top;
+    /* border: 1px solid red; */
+}
+.pop3_sub_headings{
+    margin-top: 5px;
+    margin-left: 5px;
+}
+#pop3_price{
+    margin-top: 5px;
+    margin-right: 5px;
+}
+#estimated_fare{
+    display: flex;
+    justify-content: space-between;
+    font-weight: 550;
+    font-size: 12px;
+    background-color: white;
+    height: 30px;
+    padding-bottom: -10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    /* border: 1px solid red; */
+}
+#pop3_sub_container2{
+    /* border: 1px solid red; */
+    width: 400px;
+    height: 350px;
+    margin: auto;
+    margin-top: -100px;
+    
+}
+#pop3_table{
+    /* border: 1px solid red; */
+    margin-bottom: 30px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    background-color: white;
+    margin-top: 5px;
+}
+.pop3_table_col{
+    /* border: 1px solid red; */
+    width: 500px;
+    font-size: 10px;
+    padding-left: 10px;
+}
+.pop3_table_col:nth-child(even){
+    text-align: right;
+    padding-right: 10px;
+}
+#referral_container{
+    /* border: 1px solid red; */
+    width: 90%;
+    margin-left: 10px;
+}
+#referral_container > div:nth-child(1){
+    font-weight: 600;
+}
+#referral_container > div:nth-child(2){
+    font-size: 12px;
+    margin-bottom: 20px;
+}
+#promo_code{
+    border-radius: 5px;
+    border: 1px solid grey;
+    outline: none;
+}
+#pop3_apply{
+    width: 80px;
+    border-radius: 25px;
+    font-weight: 550;
+    border: none;
+    color: white;
+    background-color: #0d6efd;
+    padding-bottom: 5px;
+}
+#included_services{
+    margin-top: 30px;
+}
+#included_services > div:nth-child(1){
+    font-size: 12px;
+}

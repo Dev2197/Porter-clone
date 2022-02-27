@@ -1,0 +1,107 @@
+.pop_container{
+    /* width: 800px; */
+    /* height: 500px; */
+    margin: auto;
+    /* border: 1px solid red; */
+    overflow: scroll;
+    /* border-radius: 20px; */
+    /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
+}
+ ::-webkit-scrollbar{
+    display: none;
+}
+.step{
+    text-align: center;
+    font-size: 14px;
+    margin-bottom: -10px;
+    /* border: 1px solid red; */
+    margin: auto;
+    /* margin-left: 300px; */
+    /* margin-top: 50px; */
+}
+.house_size{
+    text-align: center;
+    font-weight: 600;
+    font-size: 20px;
+}
+.bhk{
+    display: flex;
+    margin: auto;
+    width: 75%;
+    margin-top: 0px;
+    /* border: 1px solid red; */
+}
+.bhk > p{
+    /* border: 1px solid red; */
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+    margin-left: 25px;
+    width: 65px;
+    height: 30px;
+    text-align: center;
+    align-items: center;
+    font-size: 14px;
+    border-radius: 20px;
+    padding-top: 3px;
+    font-size: 14px;
+    color: rgb(46, 46, 46);
+    cursor: pointer;
+}
+.bhk_head{
+    display: flex;
+    /* border: 1px solid red; */
+}
+.bhk_body1{
+    display: flex;
+}
+.bhk_head > img{
+    margin-left: 50px;
+    margin-right: 30px;
+}
+.bhk_model{
+    margin-right: 350px;
+    width: 150px;
+    margin-top: 10px;
+    font-size: 14px;
+    font-weight: 550;
+    /* border: 1px solid red; */
+}
+.bhk_select{
+    width: 130px;
+    text-align: center;
+    border: 1px solid blue;
+    height: 25px;
+    border-radius: 20px;
+    padding-top: 0px;
+    margin-top: 10px;
+    cursor: pointer;
+    color: blue;
+}
+.bhk_bodys{
+    width: 100%;
+    margin-top: 25px;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
+.chair_img{
+    margin-left: 50px;
+}
+.box_img{
+    margin-left: 30px;
+}
+.included_items{
+    margin-left: 50px;
+    font-size: 12px;
+    color: blue;
+    padding-bottom: 20px;
+}
+.bhk_body{
+    background-color: rgb(248,248,248);
+}
+.bhk_body1 > p{
+    font-size: 12px;
+    font-weight: bold;
+    color: gray;
+    margin-top: 10px;
+}
+.modal-content-border-radius{
+    border-radius: 500px;
+}
