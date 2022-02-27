@@ -7,6 +7,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="/enterprise.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="/navbar2.css">
   </head>
   <style>
     body {
@@ -55,6 +56,9 @@
     }
   </style>
   <body>
+    <div id="navbar_div"></div>
+
+
     <div id="en-root">
       <div class="enterprise-desktop-banner-container">
         <div id="navbar"></div>
@@ -78,11 +82,11 @@
               src="https://d35ppnqksufxmo.cloudfront.net/frontend_website/37e0d89461ca39f25e6b9d5efbbbceea.png"
               style="height: 60rem; width: 98.5vw"
           /></picture>
-          <div class="banner-title" id="enterprise-desktop-banner-title">
+          <div class="banner-title" id="enterprise-desktop-banner-title" style="margin-top: 100px;">
             A simple and fast logistics delivery service made for your business
           </div>
         </div>
-        <form class="enterprise-form-container modal-desktop">
+        <form class="enterprise-form-container modal-desktop" style="margin-top: 100px;">
           <div class="en-head">FOR ENTERPRISES</div>
           <div class="en-select-cities">
             <input type="text" id="en-input-cities" />
@@ -402,7 +406,14 @@
     </div>
   </body>
 </html>
-<script>
+<script type="module">
+  import navbar from "/navbar.js";
+  import footer from "/footer.js";
+
+  let navbar_div = document.getElementById('navbar_div');
+  navbar_div.innerHTML = navbar();
+
+
   $(document).ready(function () {
     let cities = $(".en-select-cities").val();
     let contact_person = $("#en-input-contact").val();
