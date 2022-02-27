@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="/enterprise.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link rel="stylesheet" href="/navbar2.css">
+    <link rel="stylesheet" href="/footer.css">
   </head>
   <style>
     body {
@@ -404,6 +405,8 @@
         <option value="">More than 100</option>
       </div>
     </div>
+
+    <div id="footer_part"></div>
   </body>
 </html>
 <script type="module">
@@ -412,6 +415,9 @@
 
   let navbar_div = document.getElementById('navbar_div');
   navbar_div.innerHTML = navbar();
+
+  let footer_part = document.getElementById('footer_part');
+    footer_part.innerHTML = footer();
 
 
   $(document).ready(function () {
@@ -505,3 +511,5 @@
     });
   });
 </script>
+
+<script src="/navbar_blue_bar.js"></script>
