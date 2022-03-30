@@ -1,0 +1,340 @@
+*{
+    font-family: 'Titillium Web', sans-serif;;
+}
+
+#container1{
+    background-image:  url("https://d35ppnqksufxmo.cloudfront.net/frontend_website/c504ce6570402f768a2bfe217b49cb71.webp");
+    width: 100%;
+    height: 550px;
+    /* margin-top: 60px; */
+    /* background: url("https://d35ppnqksufxmo.cloudfront.net/frontend_website/c504ce6570402f768a2bfe217b49cb71.webp"); */
+    background-repeat: no-repeat;
+    display: flex;
+}
+
+#text_container{
+    margin-left: 75px;
+    width: 65%;
+    /* height: 200px; */
+    /* margin-top: 100px; */
+    /* border: 1px solid red; */
+
+}
+
+#heading{
+    color: #5e0be0;
+    font-size: 2.8rem;
+    font-weight: 700;
+    padding-top: 380px;
+    margin-bottom: 0px;
+}
+#sub_heading{
+    margin-top: 10px;
+    font-size: 22px;
+}
+
+#right_container{
+    position: absolute;
+    top: 25px;
+    left: 72%;
+    width: 330px;
+    height: 400px;
+    background-color: white;
+    border-radius: 8px;
+    margin-top: 110px;
+    /* border: 1px solid red; */
+}
+form{
+    margin : auto;
+    width : 80%;
+    /* border: 1px solid red; */
+}
+.form-group{
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+.form-group :focus{
+    border: 2px solid blue;
+}
+.form-group :focus + .form-label{
+    color: blue;
+}
+.form-label{
+    display: block;
+    transform: translateY(-2.8em);
+    background-color: white;
+    font-size: 12px;
+    width: 60px;
+    margin-left: 5px;
+    margin-right: 0px;
+    padding-left: 3px;
+    /* color: grey; */
+    /* border: 1px solid red; */
+}
+.num{
+    transform: translateY(-2.6em);
+    display: block;
+    font-size: 11px;
+    padding-left: 10px;
+}
+
+#name,#phone_num{
+    width: 90%;
+    height: 38px;
+    font-size: 11px;
+    /* color: grey; */
+    margin-top: 0px;
+    /* margin-bottom: 2px; */
+    padding-left: 10px;
+    box-shadow: none;
+    border: 1px solid;
+    background-color: white;
+}
+#phone_num{
+    padding-left: 50px;
+    width: 77%;
+    margin-bottom: -20px;
+}
+
+
+.form-control:focus{
+    box-shadow: none;
+    outline: none;
+}
+#phone{
+    padding-left: 30px;
+}
+.form-moving{
+    display: block;
+    font-size: 11px;
+    transform: translateY(-2.5em);
+    margin-left: 14.1px;
+    color: grey;
+}
+.form-group :focus + .form-moving{
+    transform: translateY(-4.6em);
+    color: blue;
+    background-color: white;
+    margin-left: 5px;
+    margin-right: 0px;
+    padding-left: 3px;
+    width: 35px;
+}
+.form-contol:focus + .form-moving, .form-control:not(:placeholder-shown)+.form-moving{
+    transform: translateY(-4.6em);
+    /* color: blue; */
+    background-color: white;
+    margin-left: 5px;
+    margin-right: 0px;
+    padding-left: 3px;
+    width: 35px;
+}
+.form-group  ::placeholder{
+    font-size: 10px;
+    margin-left: 5px;
+    margin-right: 0px;
+    padding-left: 3px;
+
+}
+#date{
+    width: 200px;
+    height: 25px;
+}
+
+#state{
+    margin-bottom: 30px;
+    width: 45%;
+    height: 35px;
+    margin-top: -5px;
+    margin-bottom: 20px;
+}
+#state > select{
+    width: 103%;
+    height: 40px;
+    font-size: 12px;
+    /* border-radius: 5px; */
+}
+select :focus{
+    border: 2px solid blue;
+    outline: none;
+}
+
+#submit{
+    width: 100%;
+    height: 40px;
+    border: none;
+    border-radius: 7px;
+    background-color: rgb(41,98,255);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+#container2{
+    margin-top: 90px;
+}
+
+#services_container{
+    width: 80%;
+    height: 290px;
+    display: grid;
+    grid-template-columns: repeat(3,30%);
+    grid-gap: 3.3%;
+    margin: auto;
+    margin-top: 40px;
+    /* border: 1px solid red; */
+}
+.services{
+    text-align: center;
+    /* border: 1px solid red; */
+}
+.title{
+    color: #212121;
+    font-size: 1.5em;
+    font-weight: bolder;
+
+}
+.services_title{
+    margin: auto;
+    margin-top: -63px;
+    font-size: .9em;
+    font-weight: bolder;
+    width: 80%;
+    
+    /* border: 1px solid black; */
+}
+.services_desc{
+    font-size: 13px;
+    color: #4F4F4F;
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-bottom: 0px;
+    /* border: 1px solid blue; */
+}
+ #services_container :nth-child(1){
+     margin-left: 2%;
+ }
+ .services > img{
+     width: 70%;
+     margin-top: 0px;
+     margin-bottom: 75px;
+     /* border: 1px solid red; */
+ }
+ .title{
+     margin-left: 50px;
+ }
+ .blue_line{
+     width: 35px;
+     height: 3px;
+     background-color: blue;
+     margin-left: 50px;
+     border-radius: 5px;
+     margin-top: -10px;
+     margin-bottom: px;
+ }
+
+ #container3{
+     margin-top: 100px;
+ }
+ #container3_img{
+     margin-top: 50px;
+     margin-left: 50px;
+     border-radius: 10px;
+     /* border: 1px solid red; */
+ }
+#subcontainer3{
+    margin-top: 20px;
+    background-image: linear-gradient(to right, rgb(113,122,173), rgb(136,84,160));
+    display: flex;
+}
+
+#container4{
+    margin-top: 100px;
+}
+
+ #container5{
+    width: 100%;
+    margin-top: 100px;
+}
+#sub_container5{
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4,330px);
+    grid-gap: 60px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    margin-top: 40px;
+    /* border: 1px solid red; */
+}
+.cust_details{
+    /* border: 1px solid red; */
+    background-color: rgb(43,93,253);
+    color: white;
+    margin-top: 90px;
+    margin-bottom: -40px;
+}
+.cust_desc{
+    margin-left: 30px;
+    position: relative;
+    font-size: 15px;
+    width: 260px;
+    margin-top: -50px;
+    /* border: 1px solid red; */
+}
+.cust_name{
+    margin-left: 20px;
+    margin-top: -20px;
+    font-weight: bolder;
+    font-size: 1.17em;
+}
+.cust_city{
+    margin-left: 20px;
+    margin-top: -10px;
+    font-size: 16px;
+    padding-bottom: 50px;
+}
+.cust_img{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-left: 200px;
+    margin-top: -40px;
+    margin-bottom: 0px;
+}
+.customers{
+   box-shadow: rgb(0 0 0 / 35%) 0px 5px 15px;
+   margin-bottom: 0px;
+   /* border: 1px solid red; */
+}
+.quotes{
+    position: relative;
+    margin-left: 200px;
+    /* border: 1px solid red; */
+    width: 100px;
+    height: 60px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+#container6{
+    margin-top: 100px;
+}
+#subcontainer6{
+    width: 80%;
+    margin: auto;
+    display: flex;
+}
+
+#container6_img{
+    width: 500px;
+}
+#contact_us{
+    height: 50px;
+    width: 150px;
+    border: none;
+    background-image: linear-gradient(to right, #2961FE, #5D0DE1);
+    color: white;
+    font-weight: bold;
+}

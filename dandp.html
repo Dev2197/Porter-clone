@@ -1,388 +1,277 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="dandp.css">
+    <link rel="stylesheet" href="/footer.css">
+    <link rel="stylesheet" href="/navbar2.css">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200&display=swap" rel="stylesheet">
-    <script src="faq.js"></script>
-    <link rel="stylesheet" href="faq.css">
-    <link rel="stylesheet" href="footer.css">
-    <link rel="stylesheet" href="navbar2.css">
-    <style>
-        #navbar{
-            margin-top: -8px;
-        }
-    </style>
 </head>
-
 <body>
-<div id="navbar"></div>
+    <div id="navbar_div"></div>
 
-    <div id="container">
-        <div id="head_form">
-            <div class="head_txt">
-                <h1>Attach Vehicle Now</h1>
+
+    <div id="container1">
+
+        <div id="text_container">
+            <div>
+                <p id="heading">Attach mini trucks or bike</p>
             </div>
 
-            <form>
-
-                <input class="Box " type="text" placeholder="Name"><br>
-                <input class="Box" type="number" placeholder="Mobile Number"><br>
-                <select class="Box1">
-                    <option selected>City</option>
-                    <option class="opt" value="Mumbai">MUMBAI</option>
-                    <option class="opt" value="Delhi NCR">DELHI NCR</option>
-                    <option class="opt" value="Bangalore">BANGALORE</option>
-                    <option class="opt" value="Hyderabad">HYDERABAD</option>
-                    <option class="opt" value="Chennai">CHENNAI</option>
-                    <option class="opt" value="Ahmedabad">AHMEDABAD</option>
-                    <option class="opt" value="Jaipur">JAIPUR</option>
-                    <option class="opt" value="Pune">PUNE</option>
-                    <option class="opt" value="Kolkata">KOLKATA</option>
-                    <option class="opt" value="Surat">SURAT</option>
-                    <option class="opt" value="Lucknow">LUCKNOW</option>
-                    <option class="opt" value="Coimbatore">COIMBATORE</option>
-                    <option class="opt" value="Indore">INDORE</option>
-                    <option class="opt" value="Nagpur">NAGPUR</option>
-                    <option class="opt" value="Chandigarh">CHANDIGARH</option>
-                </select>
-                <input class="Box1" type="text" placeholder="vehicle">
-                <select class="Box">
-                    <option selected>Source</option>
-                    <option value="Bus Ads">BUS ADS</option>
-                    <option value="Bpamphlet">BPAMPHLET</option>
-                    <option value="Garage Hoarding">GARAGE HOARDING</option>
-                    <option value="Newspaper Ads">NEWSPAPER ADS</option>
-                    <option value="Driver Referral">DRIVER REFERRAL</option>
-                    <option value="Customer Referral">CUSTOMER REFERRAL</option>
-                    <option value="Channel Partner">CHANNEL PARTNER</option>
-                    <option value="Others">OTHERS</option>
-                    <option value="Fos">FOS</option>
-                    <option value="Online/Facebook">ONLINE/FACEBOOK</option>
-                    <option value="Smart shift">SMART SHIFT</option>
-                </select>
-                <button class="form_btn" onclick="alert()">REGISTER</button>
-            </form>
-
-
+            <div >
+                <p id="sub_heading">Earn money by delivering goods, courier and packages. Get a part time or full time delivery job</p>
+            </div>
         </div>
-        <div id="head_low">
 
-            <div class="Heading_section">
-                <h1 class="heading">Attach mini trucks and Bike</h1>
-                <div class="heading_2">
-                    <h3> "Earn money by delivering goods, courier and packages. Get a part time or full time delivery job"
-                    </h3>
+        <div id="right_container">
+
+            <p style="text-align: left; margin-left: 70px; font-weight: bold; margin-top: 20px; margin-bottom: 30px; font-size: 16px;">Attach Vehicle Now</p>
+    
+            <form action="" method="post">
+                
+
+                <div class="form-group">
+                    <input type="text" placeholder="." id="name" class="form-control" name="yourName" required>
+                    <label for="" class="form-moving"> Name</label>
                 </div>
-            </div>
-            <div class="App_download_section">
-                <h2 style="font-weight: bolder;"class="App_title">Start Earning Immediately</h2>
-                <p style="font-weight: bold;">Download the partner app and register</p>
-                <a aria aria-label="download button" class="link_download_button" target="_blank" href="https://porter.in/partner-app">
-                    <img id="title_img" src="https://i.ibb.co/2hpJB0K/download.png" />
-                </a>
-            </div>
-        </div>
 
+                <div class="form-group">
+                    <input type="number"  id="phone_num" class="form-control" name="phoneNumber" required>
+                    <label style="width: 95px; transform: translateY(-2.9em);" for="" class="form-label" >Mobile Number</label>
+                    <label class="num">+91 -</label>
+                </div>
+
+                <div style="display: flex;">
+                    <div id="state" class="form-group" style="margin-right: 25px;">
+                        <select name="city" id="city" required>
+                            <option value="#">Please Select</option>
+                            <option value="HYDERABAD">HYDERABAD</option>
+                            <option value="MUMBAI">MUMBAI</option>
+                            <option value="DELHI NCR">DELHI NCR</option>
+                            <option value="BANGALORE">BANGALORE</option>
+                            <option value="PUNE">PUNE</option>
+                            <option value="CHENNAI">CHENNAI</option>
+                            <option value="SURAT">SURAT</option>
+                            <option value="AHMEDABAD">AHMEDABAD</option>
+                            <option value="COIMBATORE">COIMBATORE</option>
+                            <option value="INDORE">INDORE</option>
+                            <option value="JAIPUR">JAIPUR</option>
+                            <option value="KOLKATA">KOLKATA</option>
+                        </select>
+                        <label for="" class="form-label" style="transform: translateY(-3.8em); width: 25px;">City</label>
+                    </div>
+    
+                    <div id="state" class="form-group">
+                        <select name="city" id="city" required>
+                            <option value="#">Please Select</option>
+                            <option value="TATA ACE">TATA ACE</option>
+                            <option value="3 WHEELER">3 WHEELER</option>
+                            <option value="2 WHEELER">2 WHEELER</option>
+                            <option value="SUPER ACE 8FT">SUPER ACE 8FT</option>
+                            <option value="TATA 407">TATA 407</option>
+                            <option value="OTHERS">OTHERS</option>
+                        </select>
+                        <label for="" class="form-label" style="transform: translateY(-3.8em); width: 40px;">Vehicle</label>
+                    </div>
+                </div>
+
+                <div id="state" class="form-group" style="width: 95%; margin-top: 15px;">
+                    <select name="city" id="city" required>
+                        <option value="#">Source</option>
+                        <option value="BUS ADS">BUS ADS</option>
+                        <option value="PAMPHLET">PAMPHLET</option>
+                        <option value="NEWS PAPER ADS">NEWS PAPER ADS</option>
+                        <option value="DRIVER REFERRAL">DRIVER REFERRAL</option>
+                        <option value="CUSTOMER REFERRAL">CUSTOMER REFERRAL</option>
+                        <option value="CHANNEL PARTNER">CHANNEL PARTNER</option>
+                        <option value="OTHERS">OTHERS</option>
+                    </select>
+                    <label for="" class="form-label" style="transform: translateY(-3.8em); width: 40px;">Source</label>
+                </div>
+
+                <div>
+                    <input type="submit" value="REGISTER" id="submit">
+                </div>
+                
+            </form>
+        </div>
     </div>
 
+    <div id="container2">
+        <p class="title" style="margin-left: 470px;">PORTER ADVANTAGE</p>
+        <div class="blue_line" style="margin-left: 570px;"></div>
 
-    <div id="adv">
-        <div id="adv_head">
-            <h1>Porter Advantages</h1>
+        <div id="services_container">
+            <div class="services">
+                <img src="./images/porter_advantage1.png" alt="">
+                <p class="services_title">Regular Trips</p>
+                <p class="services_desc">With our growing presence across multiple cities, we always have our hands full! This means you will never run out of trips.</p>
+            </div>
+
+            <div class="services">
+                <img src="./images/porter_advantage2.png" alt="">
+                <p class="services_title">Better Earning</p>
+                <p class="services_desc">Earn more by partnering with the best! Regular trips and efficient service can grow your earnings!</p>
+            </div>
+
+            <div class="services">
+                <img src="./images/porter_advantage3.png" alt="">
+                <p class="services_title">On-Time Payment</p>
+                <p class="services_desc">Be assured to receive all payments on time & get the best in class support, when you attach mini truck with Porter.</p>
+            </div>
+
         </div>
+    </div>
 
-        <div id="adv_grid">
-            <div class="adv_txt">
-                <img id="adv_img" src="https://i.ibb.co/Qr4xmG1/26bfa72c126dc3341e7a6b577dce280b-1.png" />
-                <h4>Regular Tips</h4>
-                <p>With our growing presence across multiple cities, we always have our hands full! This means you will never run out of trips.</p>
+    <div id="container3">
+        <p class="title">MAKING YOUR LIFE EASY</p>
+        <div class="blue_line"></div>
+
+        <div id="subcontainer3">
+            <div style="margin-right: 50px;">
+                <img id="container3_img" src="https://d35ppnqksufxmo.cloudfront.net/frontend_website/77271d6ed88726ad36c6c55bc117ba4a.gif" alt="">
             </div>
-            <div class="adv_txt">
-                <img id="txt_img" src="https://i.ibb.co/wLGxK7h/26bfa72c126dc3341e7a6b577dce280b-2.png" />
-                <h4>Better Earning</h4>
-                <p>Earn more by partnering with the best! Regular trips and efficient service can grow your earnings!
-                </p>
-            </div>
-            <div class="adv_txt">
-                <img id="img" src="https://i.ibb.co/SsKkThw/26bfa72c126dc3341e7a6b577dce280b-3.png" />
-                <h4>On-Time Payment</h4>
-                <p>Be assured to receive all payments on time & get the best in class support, when you attach mini truck with Porter.</p>
-            </div>
-
-        </div>
-        <div id="easy">
-            <h2 >Making Your Easy</h2>
-            <div class="bar"></div>
-            <div id="easy_div">
-                <div class="easy_img">
-                    <img id="easy_img" src="https://d35ppnqksufxmo.cloudfront.net/frontend_website/77271d6ed88726ad36c6c55bc117ba4a.gif" />
-                </div>
-                <div class="easy_txt">
-                    <h5>Attach your two wheeler or commercial vehicle</h5>
-                    <p>If you got a 2 wheeler, or a tata ace commercial vehicle, you are good to go! With Porter, get a delivery job and deliver goods, packages, and courier.</p>
-
-                    <h5> No more waiting on the stand</h5>
-                    <p>Attach tata ace with Porter to have a steady stream of trips with minimum assured income and added incentives, so that there is no waiting and idle time at the stand!</p>
-
-                    <h5>No more bargaining. Standard Rates</h5>
-                    <p>The rates and calculation methods are standardized and completely transparent. No more wasting time in fixing the rates for every trip.</p>
-
-                    <h5>Hassle Free Navigation</h5>
-                    <p> With our GPS-based navigation you can drive anywhere across your city without worrying about the directions. Get real-time navigation assistance on the go!</p>
-
+            <div>
+                <div>
+                    <p class="services_title" style="margin-left: 0px; margin-top: 50px; margin-bottom: 5px; color: white;">Attach your two wheeler or commercial vehicle</p>
+                <p class="services_desc" style="margin-bottom: 30px; color: white; margin-right: 20px;">If you got a 2 wheeler, or a tata ace commercial vehicle, you are good to go! With Porter, get a delivery job and deliver goods, packages, and courier.</p>
                 </div>
 
+                <div>
+                    <p class="services_title" style="margin-left: 0px; margin-top: 10px; margin-bottom: 5px; color: white;">No more waiting on the stand</p>
+                <p class="services_desc" style="margin-bottom: 30px; color: white; margin-right: 20px;">Attach tata ace with Porter to have a steady stream of trips with minimum assured income and added incentives, so that there is no waiting and idle time at the stand!</p>
+                </div>
+
+                <div>
+                    <p class="services_title" style="margin-left: 0px; margin-top: 10px; margin-bottom: 5px; color: white;">No more bargaining. Standard Rates</p>
+                <p class="services_desc" style="margin-bottom: 30px; color: white; margin-right: 20px;">The rates and calculation methods are standardized and completely transparent. No more wasting time in fixing the rates for every trip.</p>
+                </div>
+
+                <div>
+                    <p class="services_title" style="margin-left: 0px; margin-top: 10px; margin-bottom: 5px; color: white;">Hassle Free Navigation</p>
+                <p class="services_desc" style="margin-bottom: 30px; color: #fff; margin-right: 20px;">With our GPS-based navigation you can drive anywhere across your city without worrying about the directions. Get real-time navigation assistance on the go!</p>
+                </div>
+                
+
+                
+                
             </div>
+        </div>
+    </div>
+
+    <div id="container4">
+        <p class="title" >ADDITIONAL BENEFITS</p>
+        <div class="blue_line" ></div>
+
+        <div id="services_container" style="width: 100%; grid-template-columns: repeat(4,22%);">
+            <div class="services">
+                <img src="./images/additional_benefits1.png" alt="">
+                <p class="services_title">Health Care Assistance</p>
+                <p class="services_desc">Get healthcare benefits for you and your family with mini truck attachment.</p>
+            </div>
+
+            <div class="services">
+                <img src="./images/additional_benefits2.png" alt="">
+                <p class="services_title">Discount on Insurance</p>
+                <p class="services_desc">Save money with reduced annual maintenance and insurance costs on your vehicle.</p>
+            </div>
+
+            <div class="services">
+                <img src="./images/additional_benefits3.png" alt="">
+                <p class="services_title">Fuel card for Savings</p>
+                <p class="services_desc">Save big on fuel costs with our smart fuel card and increase your profit margins!</p>
+            </div>
+
+            <div class="services">
+                <img src="./images/additional_benefits4.png" alt="">
+                <p class="services_title">Discount on Vehicle Purchase</p>
+                <p class="services_desc">Get major discounts on purchase of new vehicles. Add to your fleet and grow your business!</p>
+            </div>
+
+        </div>
+    </div>
+
+    <div id="container5">
+        <p class="title">CHANGING LIFE OF PEOPLE</p>
+        <div class="blue_line"></div>
+
+        <div id="sub_container5">
+            <div class="customers">
+                <img src="https://i.ibb.co/B2JK3D8/quotes.png" alt="" class="quotes">
+                <p class="cust_desc" style="margin-bottom: 110px;">“The people were very friendly and supportive during the shifting process. 
+                    They handled everything with care. 100% would recommend them for household shifting stuff!”</p>
+
+                    <div class="cust_details">
+                        <img class="cust_img" src="./images/changing_life_of_people1.png" alt="">
+                        <p class="cust_name">KRISHNA</p>
+                        <p class="cust_city" style="padding-bottom: 30px;">Hyderabad</p>
+                    </div>
+            </div>
+
+            <div class="customers">
+                <img src="https://i.ibb.co/B2JK3D8/quotes.png" alt="" class="quotes">
+                <p class="cust_desc" style="margin-bottom: 110px;">“Everything was just perfect!! Absolutely no complaints.
+                     Would recommend Porter to everyone and would definitely choose you again for my next apartment shifting.”</p>
+
+                    <div class="cust_details">
+                        <img class="cust_img" src="./images/changing_life_of_people2.png" alt="">
+                        <p class="cust_name">UMESH</p>
+                        <p class="cust_city" style="padding-bottom: 30px;">Bangalore</p>
+                    </div>
+            </div>
+
+            <div class="customers">
+                <img src="https://i.ibb.co/B2JK3D8/quotes.png" alt="" class="quotes">
+                <p class="cust_desc">“Amazing service!! Shifted my home without any fuss, crew was very professional and friendly.
+                     They have done fabulous job in packing and unpacking, that too at a very cheap price.”</p>
+
+                    <div class="cust_details">
+                        <img class="cust_img" src="./images/changing_life_of_people3.png" alt="">
+                        <p class="cust_name">BIRJU</p>
+                        <p class="cust_city">Chennai</p>
+                    </div>
+            </div>
+
             
         </div>
-
-        <div id="add_ben">
-            <h1>Additional Benefits</h1>
-        </div>
-        <div class="bar"></div>
-        <div id="add_grid">
-            <div class="add_txt">
-                <img id="add_img" src="https://i.ibb.co/zRrPT6Y/414084dd89a55ca646ea6d7c2b181534.png" />
-                <h4>Health Care Assistance</h4>
-                <p>Get healthcare benefits for you and your family with mini truck attachment.</p>
-
-            </div>
-
-            <div class="add_txt">
-                <img id="txt_img" src="https://i.ibb.co/y53Tn87/414084dd89a55ca646ea6d7c2b181534-1.png" />
-                <h4>Discount on Insurance</h4>
-                <p>Save money with reduced annual maintenance and insurance costs on your vehicle.</p>
-
-            </div>
-
-            <div class="add_txt">
-                <img id="att_img" src="https://i.ibb.co/RgJ7qHG/414084dd89a55ca646ea6d7c2b181534-2.png" />
-                <h4>Fuel card for Savings</h4>
-                <p>Save big on fuel costs with our smart fuel card and increase your profit margins!</p>
-
-            </div>
-
-            <div class="add_txt">
-                <img id="image" src="https://i.ibb.co/4gdJh2C/414084dd89a55ca646ea6d7c2b181534-3.png" />
-                <h4>Discount on Vehicle Purchase</h4>
-                <p>Get major discounts on purchase of new vehicles. Add to your fleet and grow your business!</p>
-
-            </div>
-        </div>
-    </div>
-    <div class="Testimonial_container">
-
-        <div class="testimonial_header">
-            <div class="title">
-                <h2>CHANGING LIFE OF PEOPLE</h2>
-                <div class="bar">
-                </div>
-
-            </div>
-        </div>
-
-        <div class="testimonial_profile_container">
-            <div class="testimonial_box">
-                <div class="description">
-                    “Getting business at vehicle stand has become very tough today due to intense competition. But with Porter's partner driver app, transparent fare structure and standard pricing, my life has become easier. Now I don't worry about finding customers and
-                    getting payments.”
-                </div>
-                <div class="highlight">
-                    <div>
-                        <h3>Krishna</h3>
-                    </div>
-                    <div>
-                        <p>Hyderabad</p>
-                    </div>
-                    <img class="des-img" src="https://i.ibb.co/qmtmS0X/9e237e5abd439760ed5fb6a9cf204ce6.jpg" alt="9e237e5abd439760ed5fb6a9cf204ce6" width="70px">
-                </div>
-            </div>
-
-            <div class="testimonial_box">
-                <div class="description">
-                    “Getting business at vehicle stand has become very tough today due to intense competition. But with Porter's partner driver app, transparent fare structure and standard pricing, my life has become easier. Now I don't worry about finding customers and
-                    getting payments.”
-                </div>
-                <div class="highlight">
-                    <div>
-                        <h3>Krishna</h3>
-                    </div>
-                    <div>
-                        <p>Hyderabad</p>
-                    </div>
-                    <img class="des-img" src="https://i.ibb.co/pZNPsK8/9e237e5abd439760ed5fb6a9cf204ce6-1.jpg" alt="9e237e5abd439760ed5fb6a9cf204ce6" width="70px">
-                </div>
-            </div>
-            <div class="testimonial_box">
-                <div class="description">
-                    “Getting business at vehicle stand has become very tough today due to intense competition. But with Porter's partner driver app, transparent fare structure and standard pricing, my life has become easier. Now I don't worry about finding customers and
-                    getting payments.”
-                </div>
-                <div class="highlight">
-                    <div>
-                        <h3>Krishna</h3>
-                    </div>
-                    <div>
-                        <p>Hyderabad</p>
-                    </div>
-                    <img class="des-img" src="https://i.ibb.co/0fNXYPn/9e237e5abd439760ed5fb6a9cf204ce6-2.jpg" alt="9e237e5abd439760ed5fb6a9cf204ce6" width="70px">
-                </div>
-            </div>
-
-        </div>
-    </div>
-    <div class="section_header">
-        <div class="title">
-            <h2>OWN MULTIPLE VEHICLES</h2>
-            <div class="bar"></div>
-        </div>
-
-    </div>
-    <div id="own_div">
-        <div class="own_img">
-            <img id="own_img" src="https://d35ppnqksufxmo.cloudfront.net/frontend_website/740f0c2f4370a05eb8e93fe0052d6d0e.jpg" />
-        </div>
-        <div class="own_txt">
-            <h5>If you are a fleet owner and own multiple vehicles.</h5>
-            <p>Keeping track of your vehicle fleet and optimising their efficiency can be a huge challenge. Partner with Porter to boost your earnings and manage your vehicles easily.</p>
-            <button class="contact_btn">CONTACT US</button>
-        </div>
-
 
     </div>
 
     <div id="container6">
-        <!-- <p class="title" style="padding-top: 20px ;">General FAQs</p>
-        <div class="blue_line"></div> -->
-        <div class="title_faq">
-            <h2>FREQUENTLY ASKED QUESTIONS</h2>
-            <div class="bar_faq"></div>
-        </div>
+        <p class="title">OWN MULTIPLE VEHICLES?</p>
+        <div class="blue_line"></div>
 
-        <div id="container6">
-            <p class="title" style="padding-top: 20px ;">General FAQs</p>
-            <div class="blue_line"></div>
-    
-            <div id="sub_container6">
-              <div class="faqs">
-                <div class="faq_q" id="faq1" onclick="faq1()">
-                  <img src="https://cdn-icons-png.flaticon.com/128/709/709586.png" alt="" class="arrow" id="arrow1">
-                  <h4 id="que1" class="ques">Why does the final charges vary from the estimates?</h4>
-                </div>
-                <p id="ans1" class="ans"></p>
-                <hr>
-              </div>
-    
-              <div class="faqs">
-                <div class="faq_q" id="faq2" onclick="faq2()">
-                  <img src="https://cdn-icons-png.flaticon.com/128/709/709586.png" alt="" class="arrow" id="arrow2">
-                  <h4 id="que2" class="ques">Do packers and movers dismantle and assemble furnitures?</h4>
-                </div>
-                <p id="ans2" class="ans"></p>
-                <hr>
-              </div>
-    
-              <div class="faqs">
-                <div class="faq_q" id="faq3" onclick="faq3()">
-                  <img src="https://cdn-icons-png.flaticon.com/128/709/709586.png" alt="" class="arrow" id="arrow3">
-                  <h4 id="que3" class="ques">Is there any restriction on material taken by packers and movers?</h4>
-                </div>
-                <p id="ans3" class="ans"></p>
-                <hr>
-              </div>
-    
-              <div class="faqs">
-                <div class="faq_q" id="faq4" onclick="faq4()">
-                  <img src="https://cdn-icons-png.flaticon.com/128/709/709586.png" alt="" class="arrow" id="arrow4">
-                  <h4 id="que4" class="ques">Are my goods insured?</h4>
-                </div>
-                <p id="ans4" class="ans"></p>
-                <hr>
-              </div>
-    
-              <div class="faqs">
-                <div class="faq_q" id="faq5" onclick="faq5()">
-                  <img src="https://cdn-icons-png.flaticon.com/128/709/709586.png" alt="" class="arrow" id="arrow5">
-                  <h4 id="que5" class="ques">What is the cheapest way to relocate?</h4>
-                </div>
-                <p id="ans5" class="ans"></p>
-                <hr>
-              </div>
-    
-              <div class="faqs">
-                <div class="faq_q" id="faq6" onclick="faq6()">
-                  <img src="https://cdn-icons-png.flaticon.com/128/709/709586.png" alt="" class="arrow" id="arrow6">
-                  <h4 id="que6" class="ques">Does Porter provide Intercity/interstate house shifting service?</h4>
-                </div>
-                <p id="ans6" class="ans"></p>
-                <hr>
-              </div>
-    
-              <div class="faqs">
-                <div class="faq_q" id="faq7" onclick="faq7()">
-                  <img src="https://cdn-icons-png.flaticon.com/128/709/709586.png" alt="" class="arrow" id="arrow7">
-                  <h4 id="que7" class="ques">Does Porter provide only labour or helper along with transport for house
-                    shifting?</h4>
-                </div>
-                <p id="ans7" class="ans"></p>
-                <hr>
-              </div>
-    
-              <div class="faqs">
-                <div class="faq_q" id="faq8" onclick="faq8()">
-                  <img src="https://cdn-icons-png.flaticon.com/128/709/709586.png" alt="" class="arrow" id="arrow8">
-                  <h4 id="que8" class="ques">Do packers and movers pack everything?</h4>
-                </div>
-                <p id="ans8" class="ans"></p>
-                <hr>
-              </div>
-    
-              <div class="faqs">
-                <div class="faq_q" id="faq9" onclick="faq9()">
-                  <img src="https://cdn-icons-png.flaticon.com/128/709/709586.png" alt="" class="arrow" id="arrow9">
-                  <h4 id="que9" class="ques">How much does packing a house cost?</h4>
-                </div>
-                <p id="ans9" class="ans"></p>
-                <hr>
-              </div>
-    
-              <div class="faqs" style="padding-bottom: 30px;">
-                <div class="faq_q" id="faq10" onclick="faq10()">
-                  <img src="https://cdn-icons-png.flaticon.com/128/709/709586.png" alt="" class="arrow" id="arrow10">
-                  <h4 id="que10" class="ques">Are there any additional or hidden charges?</h4>
-                </div>
-                <p id="ans10" class="ans"></p>
-                <hr>
-              </div>
+        <div id="subcontainer6">
+            <div>
+                <img id="container6_img" src="https://d35ppnqksufxmo.cloudfront.net/frontend_website/740f0c2f4370a05eb8e93fe0052d6d0e.jpg" alt="">
             </div>
-          </div>
 
-
+            <div style="margin-left: 50px;">
+                <p class="services_title" style="margin-left: 0px; margin-top: 50px; margin-bottom: 20px;">If you are a fleet owner and own multiple vehicles.</p>
+                <p class="services_desc" style="margin-bottom: 30px;">Keeping track of your vehicle fleet and optimising their efficiency can be a huge challenge. Partner with Porter to boost your earnings and manage your vehicles easily.</p>
+                <button id="contact_us">CONTACT US</button>
+            </div>
+        </div>
     </div>
 
-    <div id="footer"></div>
+    <div id="footer_part"></div>
 </body>
-
 </html>
+
 <script type="module">
+    import footer from "/footer.js";
 
-    import footer from "./footer.js";
-     let foot = document.getElementById("footer"); 
-     foot.innerHTML = footer();
+    let footer_part = document.getElementById('footer_part');
+    footer_part.innerHTML = footer();
 
-     import navbar from "./navbar.js";
-     let nav = document.getElementById("navbar"); 
-     nav.innerHTML = navbar();
 
-     function alert(){
-        alert("Registered Succefully")
-     }
+    import navbar from "/navbar.js";
+
+    let navbar_div = document.getElementById('navbar_div');
+    navbar_div.innerHTML = navbar();
 
 </script>
+
+<script src="/navbar_blue_bar.js"></script>
