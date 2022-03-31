@@ -1,12 +1,16 @@
 
 body {
     font-family: 'Titillium Web', sans-serif;
+    width: 100%;
 }
 
 /* ////// Navbar ///////// */
 
-#navbar_container{
+#main {
+    width: 99%;
+}
 
+#navbar_container{
     width: 100%;
     height: 60px;
     margin-top: -5px;
@@ -15,6 +19,7 @@ body {
     background-image: linear-gradient(to right, #2961FE, #5D0DE1);
 
 }
+
 #nav_left{
     width: 50%;
     height: 60px;
@@ -72,18 +77,19 @@ body {
 }
 #drive_title{
     font-size: 14px;
-    font-weight: 600;
+    font-weight: 800;
     margin-bottom: -10px;
     margin-top: 3px;
     margin-left: 0px;
     color: blue;
+   
 }
 #drive_desc{
     font-size: 11px;
     margin-left: 0px;
     margin-top: 4px;
     color: blue;
-    font-weight: 600;
+    font-weight: 800;
 }
 #contact_info{
     display: flex;
@@ -338,7 +344,7 @@ hr{
 
 .offerimg{
     height: 13rem;
-    width: 13rem;
+    /* width: 13rem; */
 }
 
 .offerInfo{
@@ -708,16 +714,18 @@ hr{
     margin-top: 0px;
 }
 
-#form{
+#formBody{
     display: flex;
-    width: 90%;
-    min-width: 108rem;
-    margin: 1rem auto;
+    width: 95%;
+    margin: auto;
+    /* min-width: 108rem; */
+    /* margin: 5px; */
     border-radius: 2px;
     background-color: #fff;
     box-shadow: 0 0 4px 0 #000;
-    justify-content: space-between;
-    padding: 0;
+    /* justify-content: space-between; */
+    padding: 5px;
+    /* background-image: linear-gradient(103deg, rgb(129, 157, 235), rgb(160, 113, 236)); */
 }
 
 .desktop-growth-container {
