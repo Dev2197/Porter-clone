@@ -13,7 +13,7 @@ router.post("/", async(req,res)=>{
            
         let data = await Packers.create({
             city : req.body.city,
-            yourName : req.body.yourName,
+            Name : req.body.yourName,
             phoneNumber : req.body.phoneNumber,
             movingFrom : req.body.movingFrom,
             movingTo : req.body.movingTo,

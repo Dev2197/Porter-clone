@@ -338,3 +338,36 @@ select :focus{
     color: white;
     font-weight: bold;
 }
+
+#thankyou{
+    text-align: center;
+    margin-top: 40px;
+    font-size: 23px;
+    font-family: 'Titillium Web', sans-serif;
+    line-height: 30px;
+}
+#driver_name{
+    margin-top: 50px;
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: 700;
+    font-size: 25px;
+    text-align: center;
+
+}
+#getback{
+    text-align: center;
+    font-family: 'Titillium Web', sans-serif;
+    margin-top: 50px;
+    font-size: 20px;
+}
+.registerMore{
+    width: 220px;
+    height: 50px;
+    font-weight: 700;
+    color: white;
+    background-color: #2962ff;
+    border: 1px solid #2962ff;
+    cursor: pointer;
+    margin-top: 50px;
+    margin-left: 50px;
+}
