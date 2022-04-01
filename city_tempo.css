@@ -723,15 +723,28 @@ hr{
     border-radius: 2px;
     background-color: #fff;
     box-shadow: 0 0 4px 0 #000;
-    /* justify-content: space-between; */
+    justify-content: space-between;
+    align-items: center;
     padding: 5px;
     /* background-image: linear-gradient(103deg, rgb(129, 157, 235), rgb(160, 113, 236)); */
 }
 
 #formBody>div{
-    /* display: flex; */
+    border-right: 1px solid gray;
+    align-items: center;
 }
 
+#bttn {
+    border-radius: 2px;
+    background-color: #2962ff !important;
+    color: #fff !important;
+    width: 12%;
+    margin: auto 4px;
+    height: 2rem;
+    font-size: 18px !important;
+    font-weight: 700;
+    text-align: center;
+}
 
 
 
