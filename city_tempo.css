@@ -237,7 +237,7 @@ hr{
 }
 
 #addressBar{
-    width: 98%;
+    width: 100%;
 }
 
 .join>span{
@@ -726,7 +726,17 @@ hr{
     justify-content: space-between;
     align-items: center;
     padding: 0px 0px 0px 0px;
+    height: 80px;
     /* background-image: linear-gradient(103deg, rgb(129, 157, 235), rgb(160, 113, 236)); */
+}
+
+#cities{
+    width: 130px;
+}
+
+#form {
+    background-color: lavender;
+    width: 100%;
 }
 
 #formBody>div{
