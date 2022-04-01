@@ -717,21 +717,20 @@ hr{
 #formBody{
     display: flex;
     width: 95%;
-    margin: auto;
+    /* margin: auto; */
     /* min-width: 108rem; */
-    /* margin: 5px; */
+    margin: 0.5% 0% 0% 3%;
     border-radius: 2px;
     background-color: #fff;
     box-shadow: 0 0 4px 0 #000;
     justify-content: space-between;
     align-items: center;
-    padding: 5px;
+    padding: 0px 0px 0px 0px;
     /* background-image: linear-gradient(103deg, rgb(129, 157, 235), rgb(160, 113, 236)); */
 }
 
 #formBody>div{
-    border-right: 1px solid gray;
-    align-items: center;
+    margin: 1% 1% 1% 1%;
 }
 
 #bttn {
@@ -745,9 +744,6 @@ hr{
     font-weight: 700;
     text-align: center;
 }
-
-
-
 
 
 .desktop-growth-container {
