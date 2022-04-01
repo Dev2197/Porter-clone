@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="dandp.css">
     <link rel="stylesheet" href="/footer.css">
     <link rel="stylesheet" href="/navbar2.css">
-    <title>Document</title>
+    <title>Come Join Us! Attach your mini truck or bike with Porter</title>
 </head>
 <body>
     <div id="navbar_div"></div>
@@ -29,7 +29,7 @@
 
             <p style="text-align: left; margin-left: 70px; font-weight: bold; margin-top: 20px; margin-bottom: 30px; font-size: 16px;">Attach Vehicle Now</p>
     
-            <form action="" method="post">
+            <form action="http://localhost:5000/drivers" method="post">
                 
 
                 <div class="form-group">
@@ -64,7 +64,7 @@
                     </div>
     
                     <div id="state" class="form-group">
-                        <select name="city" id="city" required>
+                        <select name="vehicle"  id="vehicle" required>
                             <option value="#">Please Select</option>
                             <option value="TATA ACE">TATA ACE</option>
                             <option value="3 WHEELER">3 WHEELER</option>
@@ -78,7 +78,7 @@
                 </div>
 
                 <div id="state" class="form-group" style="width: 95%; margin-top: 15px;">
-                    <select name="city" id="city" required>
+                    <select name="source"  id="source" required>
                         <option value="#">Source</option>
                         <option value="BUS ADS">BUS ADS</option>
                         <option value="PAMPHLET">PAMPHLET</option>
@@ -92,7 +92,7 @@
                 </div>
 
                 <div>
-                    <input type="submit" value="REGISTER" id="submit">
+                    <input type="submit"  value="REGISTER" id="submit">
                 </div>
                 
             </form>
@@ -272,6 +272,9 @@
     let navbar_div = document.getElementById('navbar_div');
     navbar_div.innerHTML = navbar();
 
+
 </script>
 
 <script src="/navbar_blue_bar.js"></script>
+
+<script  src="/dandp.js"></script>

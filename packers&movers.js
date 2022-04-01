@@ -1,35 +1,189 @@
-document.querySelector('form').addEventListener('submit', shifting_details);
 
-    function shifting_details(event){
+let few_items = document.getElementById("few_items")
+let rk = document.getElementById("1rk")
+let bhk1 = document.getElementById("1bhk")
+let bhk2 = document.getElementById("2bhk")
+let bhk3 = document.getElementById("3bhk")
+let bhk4 = document.getElementById("4bhk")
 
-        event.preventDefault();
+function model(val){
+    let value = val;
+    if(value == 1){
+        few_items.style.backgroundColor = "rgb(233,240,252)"
+        few_items.style.color = "#2962FF"
+        few_items.style.border = "1px solid rgb(233,240,252)"
 
-    let city = document.getElementById("city").value;
-    let name = document.getElementById("name").value;
-    let phone_num = document.getElementById("phone_num").value;
-    let moving_from= document.getElementById("moving_from").value;
-    let moving_to = document.getElementById("moving_to").value;
-    let shifting_date = document.getElementById("shifting_date").value;
+        rk.style.backgroundColor = "white"
+        rk.style.color = "rgb(46, 46, 46)"
+        rk.style.border = "none"
 
-    let shifing_user = {"city":city,
-                        "name" : name,
-                        "phone_num":phone_num,
-                        "moving_from":moving_from,
-                        "movig_to":moving_to,
-                        "shifting_date": shifting_date};
+        bhk1.style.backgroundColor = "white"
+        bhk1.style.color = "rgb(46, 46, 46)"
+        bhk1.style.border = "none"
+
+        bhk2.style.backgroundColor = "white"
+        bhk2.style.color = "rgb(46, 46, 46)"
+        bhk2.style.border = "none"
+
+        bhk3.style.backgroundColor = "white"
+        bhk3.style.color = "rgb(46, 46, 46)"
+        bhk3.style.border = "none"
+
+        bhk4.style.backgroundColor = "white"
+        bhk4.style.color = "rgb(46, 46, 46)"
+        bhk4.style.border = "none"
+
+        document.getElementById("bhkkkk").textContent = "Micro Shifting"
+        document.getElementById("bhk_body2").innerHTML = "";
+        document.getElementById("bhk_body3").innerHTML = "";
+    }
+    else if(value == 2){
+        few_items.style.backgroundColor = "white"
+        few_items.style.color = "rgb(46, 46, 46)"
+        few_items.style.border = "none"
+
+        rk.style.backgroundColor = "rgb(233,240,252)"
+        rk.style.color = "#2962FF"
+        rk.style.border = "1px solid rgb(233,240,252)"
+
+        bhk1.style.backgroundColor = "white"
+        bhk1.style.color = "rgb(46, 46, 46)"
+        bhk1.style.border = "none"
+
+        bhk2.style.backgroundColor = "white"
+        bhk2.style.color = "rgb(46, 46, 46)"
+        bhk2.style.border = "none"
+
+        bhk3.style.backgroundColor = "white"
+        bhk3.style.color = "rgb(46, 46, 46)"
+        bhk3.style.border = "none"
+
+        bhk4.style.backgroundColor = "white"
+        bhk4.style.color = "rgb(46, 46, 46)"
+        bhk4.style.border = "none"
+
+        document.getElementById("bhkkkk").textContent ="1 RK"
+        document.getElementById("bhk_body2").innerHTML = "";
+        document.getElementById("bhk_body3").innerHTML = "";
+    }
+    else if(value == 3){
+        few_items.style.backgroundColor = "white"
+        few_items.style.color = "rgb(46, 46, 46)"
+        few_items.style.border = "none"
+
+        rk.style.backgroundColor = "white"
+        rk.style.color = "rgb(46, 46, 46)"
+        rk.style.border = "none"
+
+        bhk1.style.backgroundColor = "rgb(233,240,252)"
+        bhk1.style.color = "#2962FF"
+        bhk1.style.border = "1px solid rgb(233,240,252)"
+
+        bhk2.style.backgroundColor = "white"
+        bhk2.style.color = "rgb(46, 46, 46)"
+        bhk2.style.border = "none"
+
+        bhk3.style.backgroundColor = "white"
+        bhk3.style.color = "rgb(46, 46, 46)"
+        bhk3.style.border = "none"
+
+        bhk4.style.backgroundColor = "white"
+        bhk4.style.color = "rgb(46, 46, 46)"
+        bhk4.style.border = "none"
+
+        document.getElementById("bhkkkk").textContent ="1 BHK"
+        document.getElementById("bhk_body2").innerHTML = "";
+        document.getElementById("bhk_body3").innerHTML = "";
+    }
+    else if(value == 4){
+        few_items.style.backgroundColor = "white"
+        few_items.style.color = "rgb(46, 46, 46)"
+        few_items.style.border = "none"
+
+        rk.style.backgroundColor = "white"
+        rk.style.color = "rgb(46, 46, 46)"
+        rk.style.border = "none"
+
+        bhk1.style.backgroundColor = "white"
+        bhk1.style.color = "rgb(46, 46, 46"
+        bhk1.style.border = "none"
+
+        bhk2.style.backgroundColor = "rgb(233,240,252)"
+        bhk2.style.color = "#2962FF"
+        bhk2.style.border = "1px solid rgb(233,240,252)"
+
+        bhk3.style.backgroundColor = "white"
+        bhk3.style.color = "rgb(46, 46, 46)"
+        bhk3.style.border = "none"
+
+        bhk4.style.backgroundColor = "white"
+        bhk4.style.color = "rgb(46, 46, 46)"
+        bhk4.style.border = "none"
+
+        document.getElementById("bhkkkk").textContent ="2 BHK"
+        document.getElementById("bhk_body2").innerHTML = "";
+        document.getElementById("bhk_body3").innerHTML = "";
+    }
+    else if(value == 5){
+        few_items.style.backgroundColor = "white"
+        few_items.style.color = "rgb(46, 46, 46)"
+        few_items.style.border = "none"
+
+        rk.style.backgroundColor = "white"
+        rk.style.color = "rgb(46, 46, 46)"
+        rk.style.border = "none"
+
+        bhk1.style.backgroundColor = "white"
+        bhk1.style.color = "rgb(46, 46, 46"
+        bhk1.style.border = "none"
+
+        bhk2.style.backgroundColor = "white"
+        bhk2.style.color = "rgb(46, 46, 46)"
+        bhk2.style.border = "none"
+
+        bhk3.style.backgroundColor = "rgb(233,240,252)"
+        bhk3.style.color = "#2962FF"
+        bhk3.style.border = "1px solid rgb(233,240,252)"
+
+        bhk4.style.backgroundColor = "white"
+        bhk4.style.color = "rgb(46, 46, 46)"
+        bhk4.style.border = "none"
+
+        document.getElementById("bhkkkk").textContent ="3 BHK"
+        document.getElementById("bhk_body2").innerHTML = "";
+        document.getElementById("bhk_body3").innerHTML = "";
+    }
+    else if(value == 6){
+        few_items.style.backgroundColor = "white"
+        few_items.style.color = "rgb(46, 46, 46)"
+        few_items.style.border = "none"
+
+        rk.style.backgroundColor = "white"
+        rk.style.color = "rgb(46, 46, 46)"
+        rk.style.border = "none"
+
+        bhk1.style.backgroundColor = "white"
+        bhk1.style.color = "rgb(46, 46, 46"
+        bhk1.style.border = "none"
+
+        bhk2.style.backgroundColor = "white"
+        bhk2.style.color = "rgb(46, 46, 46)"
+        bhk2.style.border = "none"
+
+        bhk3.style.backgroundColor = "white"
+        bhk3.style.color = "rgb(46, 46, 46)"
+        bhk3.style.border = "none"
+
+        bhk4.style.backgroundColor = "rgb(233,240,252)"
+        bhk4.style.color = "#2962FF"
+        bhk4.style.border = "1px solid rgb(233,240,252)"
+
+        document.getElementById("bhkkkk").textContent ="4 BHK"
+        document.getElementById("bhk_body2").innerHTML = "";
+        document.getElementById("bhk_body3").innerHTML = "";
+    }
     
-    // console.log(shifing_user);
-
-    localStorage.setItem("shifting", JSON.stringify(shifing_user));
-    window.location.href="#exampleModalToggle";
-
-    let shifting_user_details = JSON.parse(localStorage.getItem("shifting")) || [];
-
-    document.getElementById("date_of_mov").textContent = shifting_user_details.shifting_date;
-
 }
-
-
 
 
 

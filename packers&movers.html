@@ -92,9 +92,9 @@
 
             <p style="text-align: left; margin-left: 70px; font-weight: bold; margin-top: 20px; margin-bottom: 30px; font-size: 16px;">Get The Best Quote Now</p>
 
-            <form action="">
+            <form action="http://localhost:5000/packers" method="post">
                 <div id="state" class="form-group">
-                    <select name="" id="city" required>
+                    <select name="city" id="city" required>
                         <option value="#">Please Select</option>
                         <option value="HYDERABAD">HYDERABAD</option>
                         <option value="MUMBAI">MUMBAI</option>
@@ -113,28 +113,28 @@
                 </div>
 
                 <div class="form-group">
-                    <input type="text" placeholder="Ex.Amit" id="name" class="form-control" required>
+                    <input type="text" placeholder="Ex.Amit" id="name" class="form-control" name="yourName" required>
                     <label for="" class="form-label">Your Name</label>
                 </div>
 
                 <div class="form-group">
-                    <input type="number"  id="phone_num" class="form-control" required>
+                    <input type="number"  id="phone_num" class="form-control" name="phoneNumber" required>
                     <label style="width: 71px; transform: translateY(-2.7em);" for="" class="form-label" >Phone Number</label>
                     <label class="num">+91 -</label>
                 </div>
 
                 <div class="form-group">
-                    <input type="text"  id="moving_from" class="form-control" class="moving" placeholder="Moving From " required>
+                    <input type="text"  id="moving_from" class="form-control" class="moving" placeholder="Moving From " name="movingFrom" required>
                     <label for="" class="form-moving">Moving From</label>
                 </div>
 
                 <div class="form-group">
-                    <input type="text"  id="moving_to" class="form-control" class="moving" placeholder="Moving To" required>
+                    <input type="text"  id="moving_to" class="form-control" class="moving" placeholder="Moving To" name="movingTo" required>
                     <label for="" class="form-moving">Moving To</label>
                 </div>
 
                 <div class="form-group">
-                    <input type="datetime-local" id="shifting_date" class="form-control" placeholder="." required>
+                    <input type="datetime-local" id="shifting_date" class="form-control" placeholder="." name="shiftingDate" required>
                     <label for="" class="form-moving">Shifting Date</label>
                 </div>
 
@@ -422,19 +422,19 @@
                     <p class="house_size"> What is your house size?</p>
             
                     <div class="bhk">
-                        <p>Few Items</p>
-                        <p>1 RK</p>
-                        <p>1 BHK</p>
-                        <p>2 BHK</p>
-                        <p>3 BHK</p>
-                        <p>4 BHK+</p>
+                        <p id="few_items" onclick="model(1)" style="width: 100px;">Few Items</p>
+                        <p id="1rk" onclick="model(2)">1 RK</p>
+                        <p id="1bhk" onclick="model(3)" style="background-color: rgb(233,240,252); color: #2962FF; border: 1px solid rgb(233,240,252);">1 BHK</p>
+                        <p id="2bhk" onclick="model(4)">2 BHK</p>
+                        <p id="3bhk" onclick="model(5)">3 BHK</p>
+                        <p id="4bhk" onclick="model(6)">4 BHK+</p>
                     </div>
             
                     <div class="bhk_container">
                         <div class="bhk_bodys">
                             <div class="bhk_head">
                                 <img src="https://d35ppnqksufxmo.cloudfront.net/frontend_website/a9d6aec2a07e35e51509905bd160586a.svg" alt="">
-                                <p class="bhk_model">1 BHK Small</p>
+                                <p class="bhk_model" id="bhkkkk">1 BHK Small</p>
                                 <p class="bhk_select" id="pop1_select1" onclick="house(1)">Select</p>
                             </div>
                             <div class="bhk_body">
@@ -448,7 +448,7 @@
                             </div>
                         </div>
             
-                        <div class="bhk_bodys">
+                        <div class="bhk_bodys" id="bhk_body2">
                             <div class="bhk_head">
                                 <img src="https://d35ppnqksufxmo.cloudfront.net/frontend_website/a9d6aec2a07e35e51509905bd160586a.svg" alt="">
                                 <p class="bhk_model">1 BHK Medium</p>
@@ -466,7 +466,7 @@
                         </div>
             
             
-                        <div class="bhk_bodys">
+                        <div class="bhk_bodys" id="bhk_body3">
                             <div class="bhk_head">
                                 <img src="https://d35ppnqksufxmo.cloudfront.net/frontend_website/a9d6aec2a07e35e51509905bd160586a.svg" alt="">
                                 <p class="bhk_model">1 BHK Big</p>

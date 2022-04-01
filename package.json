@@ -1,0 +1,27 @@
+{
+  "name": "unit-3-project",
+  "version": "1.0.0",
+  "description": "PorterClone.in",
+  "main": "city_tempo.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "nodemon src/server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Dev2197/Porter-clone.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Dev2197/Porter-clone/issues"
+  },
+  "homepage": "https://github.com/Dev2197/Porter-clone#readme",
+  "dependencies": {
+    "body-parser": "^1.19.2",
+    "cors": "^2.8.5",
+    "express": "^4.17.3",
+    "mongoose": "^6.2.9"
+  }
+}
