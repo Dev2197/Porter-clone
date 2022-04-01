@@ -728,6 +728,15 @@ hr{
     /* background-image: linear-gradient(103deg, rgb(129, 157, 235), rgb(160, 113, 236)); */
 }
 
+#formBody>div{
+    /* display: flex; */
+}
+
+
+
+
+
+
 .desktop-growth-container {
     background-image: linear-gradient(103deg, rgb(41, 98, 255), rgb(94, 11, 224));
     padding: 3rem 0px;
