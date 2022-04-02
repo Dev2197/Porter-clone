@@ -3,7 +3,7 @@ function footer(){
     <div id="footer_container">
         <div id="footer1">
             <div id="company_info">
-                <img src="https://i.ibb.co/bH4LLYd/porter-footer.png" alt="" id="porter_logo">
+                <img src="./images/porter_footer.png" alt="" id="porter_logo">
                 <p id="logo_desc">Send anything, anywhere, anytime</p>
             </div>
 
@@ -74,11 +74,11 @@ function footer(){
 
         <div id="footer3">
             <div id="social_media_icons">
-                <img src="https://i.ibb.co/59qXTcc/instagram-icon.png" alt="">
-                <img src="https://i.ibb.co/9rrr6DR/facebook-icon.png" alt="">
-                <img src="https://i.ibb.co/2K4Vb8d/linkedin-icon.png" alt="">
-                <img src="https://i.ibb.co/p04TcFf/twitter-icon.png" alt="">
-                <img src="https://i.ibb.co/KwpyVGQ/youtube-icon.png" alt="">
+                <img src="./images/instagram_icon.png" alt="">
+                <img src="./images/facebook_icon.png" alt="">
+                <img src="./images/linkedin_icon.png" alt="">
+                <img src="./images/twitter_icon.png" alt="">
+                <img src="./images/youtube_icon.png" alt="">
             </div>
 
             <div id="copy_right">

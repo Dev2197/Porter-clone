@@ -1,10 +1,10 @@
-import navbar from "/navbar.js";
+import navbar from "./navbar.js";
 
 let nav = document.getElementById('main');
 nav.innerHTML = navbar();
 
 
-import footer from "./components/footer.js";
+import footer from "./footer.js";    
 
 let foot = document.getElementById('end');
 foot.innerHTML = footer();

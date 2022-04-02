@@ -3,7 +3,7 @@ function navbar() {
     <div id="navbar_container">
         <div id="nav_left">
         <div id="nav_logo">
-        <a href="index.html"><img src="https://i.ibb.co/4tn5YV5/navporter-logo.png" alt=""></a>
+        <a href="index.html"><img src="./images/navporter_logo.png" alt=""></a>
     </div>
             <div >
                 <p id="nav_heading">India's Largest Marketplace for Intracity Logistics</p>
@@ -24,7 +24,7 @@ function navbar() {
             </div>
             <div id="contact_info">
                 <div>
-                    <img src="https://i.ibb.co/P4n85zK/call-icon.png" alt="" id="call-icon">
+                    <img src="./images/call-icon.png" alt="" id="call-icon">
                 </div>
                 <div>
                     <p id="contact_num">4410-4410</p>
@@ -63,3 +63,4 @@ function navbar() {
 }
 
 export default navbar;
+
