@@ -64,6 +64,10 @@
             text-decoration: none;
             color: black;
         }
+
+        #blue_bar2{
+           background-color: rgb(48,85,249) ;
+        }
     </style>
 
 </head>
@@ -715,6 +719,9 @@
     let navbar_div = document.getElementById('navbar_div');
     navbar_div.innerHTML = navbar();
 
+    document.getElementById("drive-us").addEventListener("click",()=>{
+        window.location.href = "dandp.html";
+    })
+
 </script>
 
-<script src="/navbar_blue_bar.js"></script>

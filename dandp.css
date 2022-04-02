@@ -371,3 +371,11 @@ select :focus{
     margin-top: 50px;
     margin-left: 50px;
 }
+
+#blue_bar3{
+    background-color: rgb(48,85,249) ;
+}
+#navbar_container2{
+    height: 40px;
+}
+

@@ -1,3 +1,49 @@
+document.querySelector('form').addEventListener('submit', shifting_details);
+
+   async function shifting_details(event){
+
+        event.preventDefault();
+
+    let city = document.getElementById("city").value;
+    let name = document.getElementById("name").value;
+    let phone_num = document.getElementById("phone_num").value;
+    let moving_from= document.getElementById("moving_from").value;
+    let moving_to = document.getElementById("moving_to").value;
+    let shifting_date = document.getElementById("shifting_date").value;
+
+    // let shifing_user = {"city":city,
+    //                     "name" : name,
+    //                     "phone_num":phone_num,
+    //                     "moving_from":moving_from,
+    //                     "movig_to":moving_to,
+    //                     "shifting_date": shifting_date};
+    
+
+    window.location.href="#exampleModalToggle";
+
+    
+
+    document.getElementById("date_of_mov").textContent = shifting_date;
+
+    let res =  await fetch("http://localhost:5000/packers", {
+        method:"POST",
+        headers:{
+            "Content-Type" : "application/json"
+        },
+        body: JSON.stringify({
+            city:city,
+            Name : name,
+            phoneNumber:phone_num,
+            movingFrom:moving_from,
+            movingTo:moving_to,
+            shiftingDate: shifting_date
+        })
+    })
+
+}
+
+
+
 
 let few_items = document.getElementById("few_items")
 let rk = document.getElementById("1rk")

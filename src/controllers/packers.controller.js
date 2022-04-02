@@ -11,14 +11,14 @@ router.post("/", async(req,res)=>{
     try {
        
            
-        let data = await Packers.create({
-            city : req.body.city,
-            Name : req.body.yourName,
-            phoneNumber : req.body.phoneNumber,
-            movingFrom : req.body.movingFrom,
-            movingTo : req.body.movingTo,
-            shiftingDate: req.body.shiftingDate
-        })
+        let data = await Packers.create(req.body);
+            // city : req.body.city,
+            // Name : req.body.yourName,
+            // phoneNumber : req.body.phoneNumber,
+            // movingFrom : req.body.movingFrom,
+            // movingTo : req.body.movingTo,
+            // shiftingDate: req.body.shiftingDate
+        
         
 
         console.log(data)

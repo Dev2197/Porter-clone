@@ -16,7 +16,7 @@ async function driver(event)
  
      <div id="getback">We will get back to you shortly</div>
  
-     <button class="registerMore">REGISTER MORE</button>` 
+     <button id="register" class="registerMore">REGISTER MORE</button>` 
 
      document.getElementById("driver_name").textContent = name;
 
@@ -34,6 +34,6 @@ async function driver(event)
         })
     })
 
-    const data = await res.json()
-
 }
+
+

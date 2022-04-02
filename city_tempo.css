@@ -1,180 +1,12 @@
-
+*{
+    font-family: 'Titillium Web', sans-serif;
+}
 body {
     font-family: 'Titillium Web', sans-serif;
     width: 100%;
 }
 
-/* ////// Navbar ///////// */
 
-#main {
-    width: 99%;
-}
-
-#navbar_container{
-    width: 100%;
-    height: 60px;
-    margin-top: -5px;
-    display: flex;
-    position: sticky;
-    background-image: linear-gradient(to right, #2961FE, #5D0DE1);
-
-}
-
-#nav_left{
-    width: 50%;
-    height: 60px;
-
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-
-}
-#nav_logo{
-    width: 150px;
-}
-#nav_logo >a> img{
-    width: 100%;
-    height: 30px;
-    margin-left: -30px;
-}
-#nav_heading{
-    color: white;
-    font-size: 16px;
-    margin-left: -100px;
-    margin-top: 15px;
-}
-#nav_right{
-    width: 50%;
-    height: 60px;
-
-    display: flex;
-}
-
-#drive-us{
-    display: flex;
-
-    margin-left: 200px;
- 
-}
-
-#drive-heading{
-    width: 120px;
-    height: 40px;
-    color: rgb(99,17,217);
-    align-items: center;
-    margin-top: 10px;
-    margin-left: -2px;
-    padding-left: 20px;
-    background-color: rgb(254,223,0);
-
-}
-
-#drive-icon{
-    width: 32px;
-    margin-top: 5px;
-    margin-left: -14px;
-    /* position: absolute; */
-}
-#drive_title{
-    font-size: 14px;
-    font-weight: 800;
-    margin-bottom: -10px;
-    margin-top: 3px;
-    margin-left: 0px;
-    color: blue;
-   
-}
-#drive_desc{
-    font-size: 11px;
-    margin-left: 0px;
-    margin-top: 4px;
-    color: blue;
-    font-weight: 800;
-}
-#contact_info{
-    display: flex;
-    height: 40px;
-    margin-top: 15px;
-    align-items: center;
-    margin-left: 50px;
-
-}
-#call-icon{
-    width: 25px;
-    margin-right: 8px;
-}
-#join-us{
-    height: 38px;
-    margin-top: 10px;
-    border: 1px solid rgb(254,223,0);
-    color: rgb(254,223,0);
-    font-size: 15px;
-    font-weight: bold;
-    padding-right: 7px;
-    padding-left: 10px;
-    padding-top: -10px;
-}
-#join-us > p{
-    margin-top: 10px;
-}
-#contact_num{
-    margin-bottom: 0px;
-    color: white;
-    font-size: 15px;
-    font-weight: bold;
-}
-#city-code{
-    margin-top: 0px;
-    color: white;
-    font-size: 12px;
-}
-#navbar_container2{
-    display: flex;
-    width: 100%;
-    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
-}
-
-#nav2_left{
-    width: 40%;
-    display: flex;
-    justify-content: space-between;
-    margin-top: 8px;
-    margin-left: 5%;
-}
-
-#nav2_left >a> p{
-    font-size: 15px;
-    font-weight: bold;
-    color: #212121;
-}
-
-#nav2_left >a> p:hover{
-    color: red;
-}
-
-#nav2_right{
-    width: 60%;
-    display: flex;
-    flex-direction: row-reverse;
-    margin-top: 5px;
-    
-}
-
-#nav2_right >a> p:nth-child(1){
-    margin-right: 50px;
-    margin-left: 0px;
-    font-size: 15px;
-    font-weight: bold;
-    color: #212121;
-}
-
-#nav2_right >a> p:nth-child(2){
-    font-size: 15px;
-    color: #3a3a3a;
-}
-
-
-/* ///////// Navbar End/////////// */
 
 a{
     text-decoration: none;
@@ -201,20 +33,24 @@ hr{
 } */
 
 .feature_No{
-    font-size: 5.0rem;
+    font-size: 4.0rem;
     font-weight: 600;
     line-height: 0.77;
     color: #bdbdbd;
     flex-shrink: 0;
+    margin-right: 20px;
+    margin-left: 20px;
 }
 
 .box{
     padding: 30px;
+    display: flex;
+    
 }
 
 .heading{
     margin-bottom: 8px;
-    font-size: 2rem;
+    font-size: 20px;
     letter-spacing: 0.4px;
     font-weight: 600;
     color: #212121;
@@ -223,7 +59,7 @@ hr{
 .heading2{
     letter-spacing: 0.4px;
     height: auto;
-    font-size: 1.0rem;
+    font-size: 14px;
     line-height: 1.43;
     text-align: left;
     color: #818181;
@@ -235,7 +71,9 @@ hr{
     color: #2962ff;
     cursor: pointer;
 }
-
+.google_play{
+    width: 200px;
+}
 #addressBar{
     width: 98%;
 }
@@ -264,11 +102,12 @@ hr{
 
 .space1>div{
     justify-content: space-around;
-    margin-left: 20%;
+    width: 300px;
 }
 
 #resDetail{
     width: 50%;
+    padding-top: 50px;
 }
 
 /*///////////////// Phone Start ///////////////*/
@@ -308,7 +147,13 @@ hr{
     align-items: flex-start;
     margin-left: 4%;
 }
+#title{
+    color: #212121;
+    font-size: 1.5em;
+    font-weight: bolder;
+    margin-left: 30px;
 
+}
 #tag{
     font-weight: 900;
     color: #212121;
@@ -316,11 +161,12 @@ hr{
 }
 
 .bar{
-    width: 3rem;
+    width: 30px;
     border-radius: 8px;
     background-image: linear-gradient(84deg, #2962FF, #5e0be0);
     height: 4px;
-    margin-top: 2rem;
+    margin-top: 15px;
+    margin-left: 30px;
     margin-bottom: 2rem;
 }
 
@@ -509,6 +355,7 @@ hr{
 #res>div>div>img{
     margin-left: 1%;
     width: 100%;
+    cursor: pointer;
     
 }
 
@@ -517,7 +364,7 @@ hr{
     display: flex;
     justify-content: space-evenly;
     background-color: ghostwhite;
-    margin-top: 5%;
+    margin-top: 0%;
     margin-bottom: 5%;
 }
 
@@ -560,7 +407,8 @@ hr{
 
 .knowMore{
     margin-top: 5%;
-    width: 15%;
+    width: 130px;
+    height: 40px;
     margin-left: 20%;
     padding: 8px;
     background-image: linear-gradient(84deg, #2962FF, #5e0be0);
@@ -573,8 +421,8 @@ hr{
     color: #212121;
     font-size: 14px;
     width: 96%;
-    font-weight: 600;
-    margin: auto;
+    /* font-weight: 600; */
+    margin-left: 50px;
 }
 
 #imageDiv{
@@ -607,6 +455,7 @@ hr{
 .font{
     color: #212121;
     text-align: center;
+    font-size: 14px;
 }
 
 #enterprise{
@@ -843,5 +692,11 @@ hr{
     height: 60px;
     margin-top: 10px;
     margin-bottom: 20px;
+}
+
+/* vehicles */
+#vehicle_name{
+    width: 200px;
+    margin-left: 100px;
 }
 

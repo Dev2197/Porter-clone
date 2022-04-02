@@ -37,19 +37,19 @@ function navbar() {
     <div id="navbar_container2">
     <div id="nav2_left">
     <div>
-    <p id="index_page" onclick="navbar2(1)"><a href="index.html">CITY TEMPO</a></p>
+    <p id="index_page"><a href="index.html">CITY TEMPO</a></p>
     <div class="blue_bar" id="blue_bar1"></div>
 </div>
 <div>
-    <p id="packers_page" onclick="navbar2(2)"><a href="packers&movers.html">PACKERS & MOVERS</a></p>
+    <p id="packers_page" ><a href="packers&movers.html">PACKERS & MOVERS</a></p>
     <div class="blue_bar" id="blue_bar2"></div>
 </div>
 <div>
-    <p id="driver_page" onclick="navbar2(3)"><a href="dandp.html">DRIVER PARTNERS</a></p>
+    <p id="driver_page" ><a href="dandp.html">DRIVER PARTNERS</a></p>
     <div class="blue_bar" id="blue_bar3"></div>
 </div>
 <div>
-    <p id="enterprise_page" onclick="navbar2(4)"><a href="enterprise.html">FOR ENTERPRISE</a></p>
+    <p id="enterprise_page" ><a href="enterprise.html">FOR ENTERPRISE</a></p>
     <div class="blue_bar" id="blue_bar4"></div>
 </div>
         </div>

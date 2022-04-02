@@ -1,5 +1,4 @@
-
-import navbar from "./components/header.js";
+import navbar from "/navbar.js";
 
 let nav = document.getElementById('main');
 nav.innerHTML = navbar();
@@ -9,6 +8,10 @@ import footer from "./components/footer.js";
 
 let foot = document.getElementById('end');
 foot.innerHTML = footer();
+
+document.getElementById("drive-us").addEventListener("click",()=>{
+    window.location.href = "dandp.html";
+})
 
 
 
@@ -30,3 +33,6 @@ let phone_inside = document.querySelector(".phone_inside");
         }
         i++;
     },2000);
+
+
+    

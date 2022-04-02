@@ -1,6 +1,7 @@
 .enterprise-desktop-banner-container {
   background: #f0f0f0;
   background-color: white;
+  margin-top: -17.5px;
 }
 .common-desktop-banner-container {
   margin-bottom: 30px;
@@ -483,4 +484,10 @@
   bottom: 12px;
   left: 8px;
   font-size: 13px;
+}
+#blue_bar4{
+  background-color: rgb(48,85,249) ;
+}
+#navbar_container2{
+  height: 40px;
 }
