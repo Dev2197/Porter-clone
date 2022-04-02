@@ -29,7 +29,7 @@ app.use("/packers", packersController)
 app.use("/drivers", driverController)
 
 app.use(express.static(__dirname + '/Frontend'));
-app.get('/homepage', function(req, res) {
+app.get('/porter', function(req, res) {
   res.sendFile(path.join(__dirname , "/Frontend/index.html"));
 });
 
