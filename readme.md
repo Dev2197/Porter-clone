@@ -2,6 +2,8 @@
 
 # Porter.in Clone :
 
+This is a clone of "Porter.in". It is a website where customer can order packers and movers services.
+
 ### To start the project
 
 : run the following command in `src` folder
