@@ -25,15 +25,15 @@ Project: make a clone of https://porter.in/partners site
 ## Snapshots 📷
 - Landing Page (Home Page):
   
-![Home Page]()
+![Home Page](https://user-images.githubusercontent.com/97461845/165541023-910a0eee-08aa-40bd-abcc-f16bdedb7597.png)
 
-- Category Page:
+- Packers & Movers Page:
   
-![Category Page]()
+![Packers & Movers Page](https://user-images.githubusercontent.com/97461845/165541563-93cd490e-6e0e-46b2-8643-b063460807ae.png)
 
-- Product Details Page:
+- Driver partners Page:
   
-![Product Page]()
+![Driver partners Page](https://user-images.githubusercontent.com/97461845/165541901-0e6555fa-1c00-4345-9a4e-e2646439b715.png)
 
 
 ### End Notes 📑
