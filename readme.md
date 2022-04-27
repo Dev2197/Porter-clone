@@ -23,6 +23,7 @@ https://porterclone.netlify.app/
 - **[Ambuj Kumar](https://github.com/AmbujKrAK)**
 - **[Devendra](https://github.com/Dev2197)**
 - **[Tejas Kharote](https://github.com/Tejaskharote214)**
+- **[Mohammed Mustaq](https://github.com/mustaq-amd)**
 
 ---
 
