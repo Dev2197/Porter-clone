@@ -35,13 +35,6 @@ Project: make a clone of https://porter.in/partners site
   
 ![Product Page]()
 
-- Wishlist Page:
-  
-![Wishlist Page]()
-
-- Checkout Page:
-  
-![Checkout Page]()
 
 ### End Notes 📑
 In this project we were tried to achieve a near to perfect clone of the original website as much as possible with very limited knowledge of javascript & css. This entire journey of has given us experiences and we have learned lots of things by applying to the real website and it gave us a lot of confidence. If we have more time we can able to add more products.
