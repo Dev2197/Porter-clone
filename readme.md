@@ -1,5 +1,5 @@
 # Porter.in (Clone)
-Project: make a clone of https://porter.in/partners site
+Project: make a clone of https://porter.in/partners site -
 
 *This a website where an user can be able to book a service from packers and movers. Mostly useful for the people who are shifting form one place to another place.*
 
